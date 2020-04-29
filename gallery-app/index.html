@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery App</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id="view_area">
+
+            <div class="nav_arrow" id="left">
+                <img src="./images/arrow.svg" alt="Previous">
+            </div>
+
+            <div id="image_container">
+                <img id="photo" src="">
+                <div class="info">
+                    <p id="title"></p>
+                    <p id="description"></p>
+                </div>
+            </div>
+
+            <div class="nav_arrow" id="right">
+                <img class="rotated" src="./images/arrow.svg" alt="Next">
+            </div>
+
+        </div>
+
+        <div id="thumbnail_container"></div>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+main {
+    width: 800px;
+    margin: auto;
+
+}
+
+#view_area {
+    display: flex;
+    height: 400px;
+    margin-top: 10%;
+    box-shadow: 0px 5px 10px grey;
+}
+
+.nav_arrow {
+    flex-basis: 6%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image_container {
+    flex-basis: 88%;    
+    max-height: 100%;
+    max-width: 100%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    position: relative;
+    /* margin: auto; */
+    display: flex;
+}
+
+#photo {
+    max-height: 100%;
+    max-width: 100%;
+    /* width: auto; */
+    /* height: 100%; */
+    /* object-fit: contain; */
+    background-color: silver;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    min-height: 18%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    font-family: "Roboto";
+    display: none;
+}
+
+.rotated {
+    transform: rotate(0.5turn);
+}
+
+#title {
+    margin-left: 3%;
+    margin-top: 3%;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+#description {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    font-size: 0.8rem;
+}
+
+#thumbnail_container {
+    margin-top: 5%;
+    background-color: white;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+
+.thumbnail_title_cont {
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnail_title {
+    position: absolute;
+    bottom: 108%;
+    background-color: rgb(20, 20, 20);
+    display: none;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    padding: 6%;
+    font-family: "Roboto";
+    font-size: 0.8em;
+}
+
+.thumbnail_title::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: .5em solid transparent;
+    border-top-color: rgb(20, 20, 20);
+    transform: translate(-50%, 0);    
+}
+
+.thumbnail img {
+    height: 100px;
+    width: auto;
+    box-shadow: 0px 5px 10px grey;
+}
+
+.thumbnail:hover .thumbnail_title {
+    display: block;
+}
+
+.thumbnail:hover {
+    height: 110px;
+}
