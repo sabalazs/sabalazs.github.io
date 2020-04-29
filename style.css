@@ -19,7 +19,6 @@ img {
   margin-top: -175px;
   margin-bottom: 0px;
   font-family: "Abril Fatface", cursive;
-  font-color: #222;
   font-size: 60px;
   line-height: 50px;
   opacity: 0.8;
@@ -27,10 +26,6 @@ img {
 
 small {
   font-size: 0.5em;
-}
-
-.container_img {
-
 }
 
 main {
@@ -74,7 +69,7 @@ h1 {
 
 p, li, .introduction {
   font-family: "Josefin Sans";
-  font-color: #222;
+  color: #222;
   font-size: 18.5px;
   line-height: 1.5;
   list-style-type: square;
