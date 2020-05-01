@@ -40,11 +40,16 @@ const loadPhoto = (photoNumber) => {
      
     //highlighting selected thumbnail
     $('.thumbnail img').css('border', 'none');
-    $(`.thumbnail[data-index=${photoNumber}] img`).css('border', '3px solid gray');
+    $(`.thumbnail[data-index=${photoNumber}] img`).css('border', '0.4vmin solid gray');
 }
 
 //make the info div the same width as the current image
 document.getElementById("photo").onload = () => {
+    $(".info").width($("#photo").width()+"px");
+    $(".info").css("display","block");
+}
+//do the same when the browser windows is resized
+window.onresize = () => {
     $(".info").width($("#photo").width()+"px");
     $(".info").css("display","block");
 }
