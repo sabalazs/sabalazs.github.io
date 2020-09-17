@@ -1,0 +1,42 @@
+
+form {
+    max-width: 25rem;
+}
+
+.card-img-top {
+    max-height: 8rem;
+    width: auto;
+}
+
+.overflow-class {
+    height: 75vh;
+    overflow-y: scroll;
+}
+
+.card-columns {
+    column-count: 1;
+}
+
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+@media (min-width: 1000px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
