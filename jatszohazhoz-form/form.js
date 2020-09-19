@@ -36,3 +36,22 @@ $(document).ready(function () {
     });
 });
 
+
+$(document).ready( function () {
+    $('form fieldset:first-child').fadeIn('slow');
+    
+    $(".btn-next").on("click", function () {
+        let parentFieldset = $(this).parents('fieldset');
+        parentFieldset.fadeOut(400, function () {
+            $(this).next().fadeIn();
+        })
+    });
+
+    $(".btn-back").on("click", function () {
+        let parentFieldset = $(this).parents('fieldset');
+        parentFieldset.fadeOut(400, function () {
+            $(this).prev().fadeIn();
+        })
+    });
+});
+

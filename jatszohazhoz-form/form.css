@@ -40,3 +40,7 @@ form {
         column-count: 4;
     }
 }
+
+fieldset {
+    display: none;
+}
