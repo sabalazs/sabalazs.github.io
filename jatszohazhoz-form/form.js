@@ -12,8 +12,8 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(".selectbtn").click(function () {
         
-        let card = $(this).parent().parent();
-        let game = ($(this).siblings(".card-title").text());
+        let card = $(this).parent();
+        let game = $(this).find(".text-center .card-title").text();
 
         $("#unwanted-games").append("<li class='list-group-item'>" + game + "</li>");
 

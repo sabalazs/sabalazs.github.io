@@ -8,17 +8,15 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
     <link rel="stylesheet" href="/jatszohazhoz-form/form.css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <!-- Filter function -->
     <script src="/jatszohazhoz-form/form.js"></script>
 
@@ -27,86 +25,128 @@
 <body>
     <div class="jumbotron text-center">
         <h1>Játszó/Házhoz megrendelő</h1>
-        <p>valami jó szöveg!</p>
     </div>
 
     <form action="" class="container">
         <fieldset>
-            <div class="container mt-3">
-                <h2>Nem szeretném ezeket a játékokat:</h2>
+            <div class="container">
+                <h3>Melyik játékokat nem szeretnéd kapni a csomagodban?</h3>
 
-                <div class="container">
+                <div class="container m-3">
                     <ul id="unwanted-games" class="list-group"></ul>
                 </div>
-
-                <p>Kezdd el beírni egy játék nevét a kereséshez:</p>
-
-                <input class="form-control" id="myInput" type="text" placeholder="Search..">
-                <div id="myDIV" class="mt-3 overflow-class container">
+                <input class="form-control m-3" id="myInput" type="text" placeholder="Keresés..">
+                <div id="myDIV" class="container">
 
                     <div class="card-columns">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-center">Azul</h5>
-                                <img src="/jatszohazhoz-form/icons/PLB10001.jpg" alt="" class="card-img-top">
-                                <a href="#/" class="selectbtn btn btn-primary mt-2">Nem szeretném</a>
-                            </div>
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">Azul</h5>
+                                    <img src="/jatszohazhoz-form/icons/PLB10001.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
                         </div>
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-center">Fesztáv</h5>
-                                <img src="/jatszohazhoz-form/icons/DEL34523.jpg" alt="" class="card-img-top">
-                                <a href="#/" class="selectbtn btn btn-primary mt-2">Nem szeretném</a>
-                            </div>
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">Fesztáv</h5>
+                                    <img src="/jatszohazhoz-form/icons/DEL34523.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
                         </div>
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-center">Agricola</h5>
-                                <img src="/jatszohazhoz-form/icons/COM34390.jpg" alt="" class="card-img-top">
-                                <a href="#/" class="selectbtn btn btn-primary mt-2">Nem szeretném</a>
-                            </div>
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">Agricola</h5>
+                                    <img src="/jatszohazhoz-form/icons/COM34390.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
                         </div>
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-center">Quadropolis</h5>
-                                <img src="/jatszohazhoz-form/icons/ASM34551.jpg" alt="" class="card-img-top">
-                                <a href="#/" class="selectbtn btn btn-primary mt-2">Nem szeretném</a>
-                            </div>
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">Quadropolis</h5>
+                                    <img src="/jatszohazhoz-form/icons/ASM34551.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
                         </div>
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-center">Kingdomino</h5>
-                                <img src="/jatszohazhoz-form/icons/BLU34724.jpg" alt="" class="card-img-top">
-                                <a href="#/" class="selectbtn btn btn-primary mt-2">Nem szeretném</a>
-                            </div>
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">Kingdomino</h5>
+                                    <img src="/jatszohazhoz-form/icons/BLU34724.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
                         </div>
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-center">Patchwork</h5>
-                                <img src="/jatszohazhoz-form/icons/COM34385.jpg" alt="" class="card-img-top">
-                                <a href="#/" class="selectbtn btn btn-primary mt-2">Nem szeretném</a>
-                            </div>
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">Patchwork</h5>
+                                    <img src="/jatszohazhoz-form/icons/COM34385.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
                         </div>
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-center">A Mars Terraformálása</h5>
-                                <img src="/jatszohazhoz-form/icons/Terraforming.jpg" alt="" class="card-img-top">
-                                <a href="#/" class="selectbtn btn btn-primary mt-2">Nem szeretném</a>
-                            </div>
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">A Mars Terraformálása</h5>
+                                    <img src="/jatszohazhoz-form/icons/Terraforming.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
                         </div>
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-center">Sagrada</h5>
-                                <img src="/jatszohazhoz-form/icons/RS-SA01.jpg" alt="" class="card-img-top">
-                                <a href="#/" class="selectbtn btn btn-primary mt-2">Nem szeretném</a>
-                            </div>
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">Sagrada</h5>
+                                    <img src="/jatszohazhoz-form/icons/RS-SA01.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="btn-next btn btn-primary float-right m-5">Következő</div>
+                <div class="btn-next btn btn-primary float-right m-5">Tovább</div>
             </div>
         </fieldset>
-        
+
+        <!-- SECOND PAGE -->
+
+        <fieldset>
+            <h3 class="mb-3">Sorolj fel néhányat a kedvenc játékaid közül!</h3>
+            <textarea class="form-control mb-3" id="favourites"></textarea>
+
+            <h3 class="mb-3">Általában hányan fogtok játszani?</h3>
+            <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="playerCount2">
+                <label class="custom-control-label" for="playerCount2">2</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="playerCount3">
+                <label class="custom-control-label" for="playerCount3">3</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="playerCount4">
+                <label class="custom-control-label" for="playerCount4">4</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="playerCount5">
+                <label class="custom-control-label" for="playerCount5">5</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="playerCount6">
+                <label class="custom-control-label" for="playerCount6">6+</label>
+            </div>
+            <div class="form-group">
+                <label for="name">Név:</label>
+                <input type="text" class="form-control" placeholder="Név" id="name">
+            </div>
+ 
+            <div class="btn-back btn btn-primary float-left m-5">Vissza</div>
+            <div class="btn-next btn btn-primary float-right m-5">Tovább</div>
+        </fieldset>
+
+        <!-- THIRD PAGE -->
+
         <fieldset>
             <div class="form-group">
                 <label for="email">Email cím:</label>
@@ -116,14 +156,13 @@
                 <label for="name">Név:</label>
                 <input type="text" class="form-control" placeholder="Név" id="name">
             </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox"> Emlékezz rám
-                </label>
-            </div>
+
             <button type="submit" class="btn btn-primary">Submit</button>
             <div class="btn-back btn btn-primary float-left m-5">Vissza</div>
         </fieldset>
+
+
+
     </form>
 
 </body>

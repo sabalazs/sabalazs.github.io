@@ -8,11 +8,6 @@ form {
     width: auto;
 }
 
-.overflow-class {
-    height: 75vh;
-    overflow-y: scroll;
-}
-
 .card-columns {
     column-count: 1;
 }
