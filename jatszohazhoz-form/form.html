@@ -32,6 +32,92 @@
         <!-- FIRST PAGE -->
 
         <fieldset>
+            <div class="container list-container" id="wishlist">
+                <h3>Van az alábbiak között olyan játék, amit kifejezetten szeretnél kipróbálni?</h3>
+                <small class="form-text text-muted mb-2">Igyekszünk minden kérésnek eleget tenni, de nem garantáljuk, hogy valóban pont ezeket fogod kapni. <br>
+                    Nem ismersz egyet sem? Semmi gond, nyugodtan hagyd ki ezt a lépést és mi gondoskodunk róla, hogy olyan játékokat kapj, amik tetszeni fognak.</small>
+                
+
+                <div class="container m-3">
+                    <ul class="list-group game-list"></ul>
+                </div>
+                <input class="form-control m-3 search-box" type="text" placeholder="Keresés..">
+                <div class="container card-container">
+
+                    <div class="card-columns">
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">Azul</h5>
+                                    <img src="/jatszohazhoz-form/icons/PLB10001.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">Fesztáv</h5>
+                                    <img src="/jatszohazhoz-form/icons/DEL34523.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">Agricola</h5>
+                                    <img src="/jatszohazhoz-form/icons/COM34390.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">Quadropolis</h5>
+                                    <img src="/jatszohazhoz-form/icons/ASM34551.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">Kingdomino</h5>
+                                    <img src="/jatszohazhoz-form/icons/BLU34724.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">Patchwork</h5>
+                                    <img src="/jatszohazhoz-form/icons/COM34385.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">A Mars Terraformálása</h5>
+                                    <img src="/jatszohazhoz-form/icons/Terraforming.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-2">
+                            <a href="#/" class="selectbtn text-decoration-none text-reset">
+                                <div class="text-center">
+                                    <h5 class="card-title">Sagrada</h5>
+                                    <img src="/jatszohazhoz-form/icons/RS-SA01.jpg" alt="" class="card-img-top">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-next btn btn-primary float-right m-5">Tovább</div>
+            </div>
+        </fieldset>
+
+<!-- SECOND PAGE -->
+
+        <fieldset>
             <div class="form-group">
                 <h3 class="">Sorolj fel néhányat a kedvenc játékaid közül!</h3>
                 <small class="form-text text-muted mb-2">Ezek segítenek nekünk meghatározni, hogy milyen típusú játékok
@@ -171,20 +257,28 @@
                 </div>
             </div>
 
+            <div class="form-group">
+                <h3 class="">Bármilyen egyéb üzenet:</h3>
+                <textarea class="form-control" id="note"></textarea>
+            </div>
+
             <div class="btn-next btn btn-primary float-right m-5">Tovább</div>
+            <div class="btn-back btn btn-primary float-left m-5">Vissza</div>
         </fieldset>
 
-        <!-- SECOND PAGE -->
+        <!-- THIRD PAGE -->
 
         <fieldset>
-            <div class="container">
-                <h3>Melyik játékokat nem szeretnéd kapni a csomagodban?</h3>
+            <div class="container list-container" id="unwanted">
+                <h3>Melyik játékokat NEM szeretnéd kapni a csomagodban?</h3>
+                <small class="form-text text-muted mb-2">Például mert megvan otthon, vagy esetleg már próbáltad és nem annyira tetszett.</small>
+                
 
                 <div class="container m-3">
-                    <ul id="unwanted-games" class="list-group"></ul>
+                    <ul class="list-group game-list"></ul>
                 </div>
-                <input class="form-control m-3" id="myInput" type="text" placeholder="Keresés..">
-                <div id="myDIV" class="container">
+                <input class="form-control m-3 search-box" type="text" placeholder="Keresés..">
+                <div class="container card-container">
 
                     <div class="card-columns">
                         <div class="card p-2">
@@ -258,7 +352,7 @@
             </div>
         </fieldset>
 
-        <!-- THIRD PAGE -->
+        <!-- 4th PAGE -->
 
         <fieldset>
             <div class="form-group">
