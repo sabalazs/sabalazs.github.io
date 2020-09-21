@@ -63,3 +63,14 @@ $(document).ready(function () {
     });
 });
 
+
+//Foxpost plugin
+function receiveMessage(event) {
+    // if (event.origin !== 'https://cdn.foxpost.hu') {return};
+    var apt = JSON.parse(event.data);
+
+    $('textarea').val(apt.name, apt.findme);
+}
+
+window.addEventListener('message', receiveMessage, false);
+
