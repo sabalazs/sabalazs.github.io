@@ -1,8 +1,3 @@
-
-form {
-    max-width: 25rem;
-}
-
 .card-img-top {
     max-height: 8rem;
     width: auto;
@@ -38,4 +33,21 @@ form {
 
 fieldset {
     display: none;
+    padding-bottom: 3rem;
+}
+
+.logo {
+    max-height: 7rem;
+}
+
+.top-title {
+    color: #a93033;
+}
+
+.hmtl {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fixed-bottom {
+    background-color: #eeeeee;
 }
