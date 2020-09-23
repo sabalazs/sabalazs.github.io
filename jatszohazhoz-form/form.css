@@ -33,7 +33,7 @@
 
 fieldset {
     display: none;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
 }
 
 .logo {
@@ -50,4 +50,9 @@ fieldset {
 
 .fixed-bottom {
     background-color: #eeeeee;
+}
+
+.form-group {
+    max-width: 800px;
+    margin: auto;
 }

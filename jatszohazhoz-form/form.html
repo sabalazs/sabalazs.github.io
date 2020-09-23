@@ -35,7 +35,7 @@
 
         <fieldset>
             <div class="container list-container" id="wishlist">
-                <p class="h3">Melyik játékokat próbálnád ki szívesen?</p>
+                <p class="h3 text-center">Melyik játékokat próbálnád ki szívesen?</p>
                 <small class="form-text text-muted mb-2">
                     Nem ismersz egyet sem? Semmi gond, nyugodtan hagyd ki ezt a lépést és mi gondoskodunk róla, hogy
                     olyan játékokat kapj, amik tetszeni fognak.<br><br>Pontosan tudod mit szeretnél? Válaszd ki a
@@ -118,7 +118,9 @@
                 </div>
             </div>
             <div class="fixed-bottom px-5">
-                <div class="btn-next btn btn-primary float-right m-2">Tovább</div>
+                <div class="container">
+                    <div class="btn-next btn btn-primary float-right m-2">Tovább</div>
+                </div>
             </div>
         </fieldset>
 
@@ -126,7 +128,7 @@
 
         <fieldset>
             <div class="container list-container" id="unwanted">
-                <p class="h3">Melyik játékokat NEM szeretnéd kapni a csomagodban?</p>
+                <p class="h3 text-center">Melyik játékokat NEM szeretnéd kapni a csomagodban?</p>
                 <small class="form-text text-muted mb-2">Például mert megvan otthon, vagy esetleg már próbáltad és nem
                     annyira tetszett.</small>
 
@@ -206,17 +208,25 @@
                 </div>
             </div>
             <div class="fixed-bottom px-5">
-                <div class="btn-next btn btn-primary float-right m-2">Tovább</div>
-                <div class="btn-back btn btn-primary float-left m-2">Vissza</div>
+                <div class="container">
+                    <div class="btn-next btn btn-primary float-right m-2">Tovább</div>
+                    <div class="btn-back btn btn-primary float-left m-2">Vissza</div>
+                </div>
             </div>
         </fieldset>
 
         <!-- THIRD PAGE -->
 
-        <fieldset>
+        <fieldset class="container">
             <div class="form-group">
-                <h3 class="">Általában hányan fogtok játszani?</h3>
-                <small class="form-text text-muted mb-2">Többet is megjelölhetsz.</small>
+                <p class="h3 text-center">Preferenciák</p>
+                <small class="form-text text-muted mb-5">
+                    Ezek a kérdések segítenek nekünk meghatározni, hogy milyen típusú játékok fognak tetszeni neked.
+                    Nyugodtan kihagyhatod bármelyik kérdést, ha nem tudsz, vagy nem szeretnél válaszolni rá.
+                </small>
+                <p class="h3">Játékosszám</p>
+                <small class="form-text text-muted mb-2">Általában hányan fogtok játszani? Többet is
+                    megjelölhetsz.</small>
                 <div class="custom-control custom-checkbox custom-control-inline">
                     <input type="checkbox" class="custom-control-input" id="playerCount2">
                     <label class="custom-control-label" for="playerCount2">2</label>
@@ -239,7 +249,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <h3 class="">Komplexitás</h3>
+                <p class="h3 pt-4">Komplexitás</p>
                 <small class="form-text text-muted mb-2">Jelöld meg az alábbi skálán, hogy elsősorban milyen
                     komplexitású játékokat szeretnél kapni. Többet is megjelölhetsz.</small>
                 <div class="custom-control custom-checkbox">
@@ -261,7 +271,7 @@
             </div>
 
             <div class="form-group">
-                <h3 class="">Játékidő</h3>
+                <p class="h3 pt-4">Játékidő</p>
                 <small class="form-text text-muted mb-2">Jelöld meg az alábbi skálán, hogy elsősorban milyen hosszú
                     játékokat szeretnél kapni. Többet is megjelölhetsz.</small>
                 <div class="custom-control custom-checkbox">
@@ -281,96 +291,63 @@
                     <label class="custom-control-label" for="length4">3 óránál hosszabb.</label>
                 </div>
             </div>
-            
+
             <div class="form-group">
-                <h3 class="">Sorolj fel néhányat a kedvenc játékaid közül!</h3>
-                <small class="form-text text-muted mb-2">Ezek segítenek nekünk meghatározni, hogy milyen típusú játékok
-                    fognak tetszeni neked. Figyelem, az itt szereplő konkrét játékok is előfordulhatnak majd a
+                <p class="h3 pt-4">Sorolj fel néhányat a kedvenc játékaid közül!</p>
+                <small class="form-text text-muted mb-2">Figyelem, az itt szereplő konkrét játékok is előfordulhatnak
+                    majd a
                     dobozodban. Ha ezt nem szeretnéd, az előző oldalon is tüntesd fel őket.</small>
                 <textarea class="form-control" id="favourites"></textarea>
             </div>
 
             <div class="form-group">
-                <h3>Szeretnél kooperatív játékokat?</h3>
-                <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="coop1" value="1" name="coop">
-                    <label class="custom-control-label" for="coop1">Igen</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="coop0" value="0" name="coop">
-                    <label class="custom-control-label" for="coop0">Nem</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="coop2" value="2" name="coop" checked>
-                    <label class="custom-control-label" for="coop2">Mindegy</label>
-                </div>
-            </div>
-
-
-            <div class="form-group">
-                <h3>Csak olyan játékokat szeretnél, amik ketten is jók?</h3>
-                <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="twoplayer1" value="1" name="twoplayer">
-                    <label class="custom-control-label" for="twoplayer1">Igen</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="twoplayer0" value="0" name="twoplayer" checked>
-                    <label class="custom-control-label" for="twoplayer0">Nem</label>
-                </div>
+                <p class="h3 pt-4">Szeretnél kooperatív játékokat?</p>
+                <select class="custom-select" id="coop">
+                    <option value="1">Igen</option>
+                    <option value="0">Nem</option>
+                    <option selected value="2">Mindegy</option>
+                </select>
             </div>
 
             <div class="form-group">
-                <h3>Nyelvfüggetlen játékok</h3>
-                <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="languageHU" value="HU" name="language">
-                    <label class="custom-control-label" for="languageHU">Csak magyar nyelvű, vagy nyelvfüggetlen
-                        játékokat szeretnék kapni.</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="languageHUEN" value="HU, EN" name="language"
-                        checked>
-                    <label class="custom-control-label" for="languageHUEN">Jöhetnek angol nyelvű és nem teljesen
-                        nyelvfüggetlen játékok is. (Például: angol szöveg a kártyákon.)</label>
-                </div>
+                <p class="h3 pt-4">Csak olyan játékokat szeretnél, amik ketten is jók?</p>
+                <select class="custom-select" id="twoplayer">
+                    <option value="1">Igen</option>
+                    <option selected value="0">Nem</option>
+                </select>
             </div>
 
             <div class="form-group">
-                <h3>Szeretnél gyerekjátékokat?</h3>
-                <small class="form-text text-muted mb-2">5. osztálytól felfelé a könnyedebb felnőtt játékokat
+                <p class="h3 pt-4">Nyelvfüggetlen játékok</p>
+                <select class="custom-select" id="language">
+                    <option selected value="HU, EN">Jöhetnek angol nyelvű és nem teljesen nyelvfüggetlen játékok is.
+                        (Például: angol szöveg a kártyákon.)</option>
+                    <option value="HU">Csak magyar nyelvű, vagy nyelvfüggetlen játékokat szeretnék kapni.</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p class="h3 pt-4">Szeretnél gyerekjátékokat?</p>
+                <small class="form-text text-muted mb-2">5. osztálytól felfelé már inkább a könnyedebb felnőtt játékokat
                     ajánljuk.</small>
-                <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="children0" value="0" name="children" checked>
-                    <label class="custom-control-label" for="children0">Nem</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="children1" value="1" name="children">
-                    <label class="custom-control-label" for="children1">Igen, minden csomagban egyet. (1-2. osztályos
-                        gyerekeknek)</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="children2" value="2" name="children">
-                    <label class="custom-control-label" for="children2">Igen, minden csomagban egyet. (3-4. osztályos
-                        gyerekeknek)</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="children3" value="3" name="children">
-                    <label class="custom-control-label" for="children3">Igen, csak gyerekjátékokat szeretnék kapni.
-                        (1-2. osztályos gyerekeknek)</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="children4" value="4" name="children">
-                    <label class="custom-control-label" for="children4">Igen, csak gyerekjátékokat szeretnék kapni.
-                        (3-4. osztályos gyerekeknek)</label>
-                </div>
+                <select class="custom-select" id="children">
+                    <option selected value="0">Nem</option>
+                    <option value="1">Igen, minden csomagban egyet. (1-2. osztályos gyerekeknek)</option>
+                    <option value="2">Igen, minden csomagban egyet. (3-4. osztályos gyerekeknek)</option>
+                    <option value="3">Igen, csak gyerekjátékokat szeretnék kapni. (1-2. osztályos gyerekeknek)</option>
+                    <option value="4">Igen, csak gyerekjátékokat szeretnék kapni. (3-4. osztályos gyerekeknek)</option>
+                </select>
             </div>
 
             <div class="form-group">
-                <h3 class="">Bármilyen egyéb üzenet:</h3>
+                <p class="h3 pt-4">Bármilyen egyéb üzenet:</p>
                 <textarea class="form-control" id="note"></textarea>
             </div>
             <div class="fixed-bottom px-5">
-                <div class="btn-back btn btn-primary float-left m-2">Vissza</div>
-                <div class="btn-next btn btn-primary float-right m-2">Tovább</div>
+                <div class="container">
+                    <div class="btn-back btn btn-primary float-left m-2">Vissza</div>
+                    <div class="btn-next btn btn-primary float-right m-2">Tovább</div>
+                </div>
             </div>
         </fieldset>
 
@@ -378,24 +355,65 @@
 
         <fieldset>
 
+            <p class="h3 text-center">Szállítási és számlázási információk</p>
             <div class="form-group">
-                <iframe frameborder="0" loading="lazy" src="https://cdn.foxpost.hu/apt-finder/v1/app/?theme=dark"
-                    width="100%" height="600px"></iframe>
-                <h3 class="mt-5">Választott automata:</h3>
-                <textarea class="form-control" id="foxpost"></textarea>
+                <label class="pt-4" for="courier">Válassz szállítási módot:</label>
+                <select class="custom-select" id="courier">
+                    <option selected value="Foxpost">Foxpost csomagautomata</option>
+                    <option value="24h">Házhoz szállítás</option>
+                </select>
+            </div>
+
+            <div id="foxpost-div" class="pt-4">
+                <div class="form-group">
+                    <iframe frameborder="0" loading="lazy" src="https://cdn.foxpost.hu/apt-finder/v1/app/?theme=dark"
+                        width="100%" height="600px"></iframe>
+                    <sp class="h4">Választott automata:</p>
+                    <input type="text" class="form-control" id="foxpost" readonly></input>
+                </div>
             </div>
 
             <div class="form-group">
-                <label for="email">Email cím:</label>
-                <input type="email" class="form-control" placeholder="Email" id="email">
+                <p class="h3 pt-4">Melyik csomagra szeretnél előfizetni?</p>
+                <select class="custom-select" id="productid">
+                    <option value="2">A - Kéthetente egy csomag, alkalmanként 3 játékkal, három hónapig (6 kiszállítás) - 23.850,- Ft</option>
+                    <option selected value="1">B - Havonta egy csomag, alkalmanként 3 játékkal, három hónapig (3 kiszállítás) - 14.850,- Ft</option>
+                    <option value="3">C - Kéthavonta egy csomag, alkalmanként 4 játékkal, hat hónapig (3 kiszállítás) - 19.950,- Ft</option>
+                </select>
             </div>
+            
             <div class="form-group">
                 <label for="name">Név:</label>
                 <input type="text" class="form-control" placeholder="Név" id="name">
+
+                <label for="email">Email cím:</label>
+                <input type="email" class="form-control" placeholder="Email" id="email">
+
+                <label for="phone">Telefonszám:</label>
+                <input type="text" class="form-control" placeholder="+36xxxxxxxxx" id="phone">
+
+                <label for="postcode">Irányítószám:</label>
+                <input type="text" class="form-control" placeholder="Irányítószám" id="postcode">
+
+                <label for="city">Település</label>
+                <input type="text" class="form-control" placeholder="Település" id="city">
+
+                <label for="addr1">Utca</label>
+                <input type="text" class="form-control" placeholder="Utca" id="addr1">
+
+                <label for="addr2">Házszám, emelet, ajtó</label>
+                <input type="text" class="form-control" placeholder="Utca" id="addr2">
             </div>
+            
+
+
+
+
             <div class="fixed-bottom px-5">
-                <div class="btn-back btn btn-primary float-left m-2">Vissza</div>
-                <button type="submit" class="btn btn-success float-right m-2">Elküld</button>
+                <div class="container">
+                    <div class="btn-back btn btn-primary float-left m-2">Vissza</div>
+                    <button type="submit" class="btn btn-success float-right m-2">Elküld</button>
+                </div>
             </div>
         </fieldset>
 

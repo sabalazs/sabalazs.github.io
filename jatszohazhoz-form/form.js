@@ -52,18 +52,36 @@ $(document).ready(function () {
         let parentFieldset = $(this).parents('fieldset');
         parentFieldset.fadeOut(400, function () {
             $(this).next().fadeIn();
-            window.scrollTo(0,0);
-        })
+            window.scrollTo(0, 0);
+        });
     });
 
     $(".btn-back").on("click", function () {
         let parentFieldset = $(this).parents('fieldset');
         parentFieldset.fadeOut(400, function () {
             $(this).prev().fadeIn();
-            window.scrollTo(0,0);
-        })
+            window.scrollTo(0, 0);
+        });
     });
 });
+
+
+//delivery page
+$(document).ready(function () {
+    $("#courier").change(function () {
+        console.log($(this).val());
+        if ($(this).val() == "Foxpost") {
+            $('#foxpost-div').show();
+            $('#foxpost-div').attr('required', '');
+            $('#foxpost-div').attr('data-error', 'This field is required.');
+        } else {
+            $('#foxpost-div').hide();
+            $('#foxpost-div').removeAttr('required');
+            $('#foxpost-div').removeAttr('data-error');
+        }
+    });
+});
+//$("#courier").trigger("change");
 
 
 //Foxpost plugin
@@ -71,7 +89,7 @@ function receiveMessage(event) {
     // if (event.origin !== 'https://cdn.foxpost.hu') {return};
     var apt = JSON.parse(event.data);
 
-    $('textarea').val(apt.name, apt.findme);
+    $('#foxpost').val(apt.name, apt.findme);
 }
 
 window.addEventListener('message', receiveMessage, false);
