@@ -377,51 +377,55 @@
             </div>
 
             <div class="form-group container">
-                <label class="pt-4" for="courier">Válassz szállítási módot:</label>
+                <label class="h3 pt-4" for="courier">Válassz szállítási módot:</label>
                 <select class="select2" style="width: 100%" id="courier">
                     <option selected value="Foxpost">Foxpost csomagautomata</option>
                     <option value="24h">Házhoz szállítás</option>
                 </select>
             </div>
-
-            <div id="foxpost-div" class="pt-4">
+            
+            <!-- <div id="foxpost-div" class="pt-4">
                 <div class="form-group">
                     <iframe frameborder="0" loading="lazy" src="https://cdn.foxpost.hu/apt-finder/v1/app/?theme=dark"
-                        width="100%" height="600px"></iframe>
+                    width="100%" height="600px"></iframe>
                     <p class="h4">Választott automata:</p>
-                        <input type="text" class="form-control" id="foxpost" readonly></input>
+                    <input type="text" class="form-control" id="foxpost" readonly></input>
                 </div>
+            </div> -->
+            
+            <div class="form-group container pt3" id="foxpost-div">
+                <select class="select2" style="width: 100%" id="foxpost_machine">
+                </select>
+                <a href="https://foxpost.hu/csomagautomatak" target="_blank"><small>Térképes kereső a Foxpost oldalán</small></a>
             </div>
-
 
             <div class="form-group container pt-4">
 
                 <label for="name">Név:</label>
-                <input type="text" class="form-control" placeholder="Név" id="name">
+                <input type="text" class="form-control mb-3" placeholder="Név" id="name">
 
                 <label for="email">Email cím:</label>
-                <input type="email" class="form-control" placeholder="Email" id="email">
+                <input type="email" class="form-control mb-3" placeholder="Email" id="email">
 
                 <label for="phone">Telefonszám:</label>
-                <input type="text" class="form-control" placeholder="+36xxxxxxxxx" id="phone">
+                <input type="text" class="form-control mb-3" placeholder="+36xxxxxxxxx" id="phone">
 
                 <label for="postcode">Irányítószám:</label>
-                <input type="text" class="form-control" placeholder="Irányítószám" id="postcode">
+                <input type="text" class="form-control mb-3" placeholder="Irányítószám" id="postcode">
 
                 <label for="city">Település:</label>
-                <input type="text" class="form-control" placeholder="Település" id="city">
+                <input type="text" class="form-control mb-3" placeholder="Település" id="city">
 
                 <label for="addr1">Utca:</label>
-                <input type="text" class="form-control" placeholder="Utca" id="addr1">
+                <input type="text" class="form-control mb-3" placeholder="Utca" id="addr1">
 
                 <label for="addr2">Házszám, emelet, ajtó:</label>
-                <input type="text" class="form-control" placeholder="Házszám, emelet, ajtó:" id="addr2">
+                <input type="text" class="form-control mb-3" placeholder="Házszám, emelet, ajtó:" id="addr2">
                 <div class="foxpost-hide">
                     <label for="addrnote">Egyéb információ a futárnak</label>
                     <input type="text" class="form-control" placeholder="Megjegyzés" id="addrnote">
                 </div>
             </div>
-
 
 
 

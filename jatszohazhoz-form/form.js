@@ -63,7 +63,7 @@ $(document).ready(function () {
     //custom Select2 select menus 
     $('.select2').select2({
         width: 'resolve', // need to override the changed default
-        minimumResultsForSearch: -1 //to hide the searchbox
+        minimumResultsForSearch: 10 //to hide the searchbox
     });
 
     //delivery page
@@ -85,24 +85,36 @@ $(document).ready(function () {
         if ($(this).val() == 4) {
             $('#courier').val('Foxpost');
             $('#courier').trigger('change');
-            $("#courier").prop("disabled", true);            
+            $("#courier").prop("disabled", true);
         } else {
-            $("#courier").prop("disabled", false);       
-            
+            $("#courier").prop("disabled", false);
+
         }
     });
 
-    //Foxpost plugin
-    function receiveMessage(event) {
-        // if (event.origin !== 'https://cdn.foxpost.hu') {return};
-        var apt = JSON.parse(event.data);
-        $('#foxpost').val(apt.name, apt.findme);
-        if ($("#foxpost").val()!="") {
-            var element = document.getElementById("foxpost");
-            element.scrollIntoView();
-        }
-    }
-    window.addEventListener('message', receiveMessage, false);
+    // //Foxpost plugin
+    // function receiveMessage(event) {
+    //     // if (event.origin !== 'https://cdn.foxpost.hu') {return};
+    //     var apt = JSON.parse(event.data);
+    //     $('#foxpost').val(apt.name, apt.findme);
+    //     if ($("#foxpost").val() != "") {
+    //         var element = document.getElementById("foxpost");
+    //         element.scrollIntoView();
+    //     }
+    // }
+    // window.addEventListener('message', receiveMessage, false);
 
+    //Foxpost list
+    let dropdown = $('#foxpost_machine');
+    dropdown.empty();
+    dropdown.append('<option selected="true" disabled>Válassz automatát</option>');
+    dropdown.prop('selectedIndex', 0);
 
+    const foxpost_url = 'http://cdn.foxpost.hu/foxpost_terminals_extended_v3.json';
+
+    $.getJSON(foxpost_url, function (data) {
+        $.each(data, function (index, item) {
+            dropdown.append($('<option></option>').val(item.operator_id).text(`${item.name} - ${item.address}`));
+        });
+    });
 });
