@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Játszó/Házhoz</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    <!-- Select2 Plugin -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- Own stylesheet -->
     <link rel="stylesheet" href="/jatszohazhoz-form/form.css">
+    <!-- Font -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Popper JS -->
@@ -21,6 +25,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Filter function -->
     <script src="/jatszohazhoz-form/form.js"></script>
+    <!-- Select2 Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 
 </head>
 
@@ -218,7 +224,7 @@
         <!-- THIRD PAGE -->
 
         <fieldset class="container">
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 text-center">Preferenciák</p>
                 <small class="form-text text-muted mb-5">
                     Ezek a kérdések segítenek nekünk meghatározni, hogy milyen típusú játékok fognak tetszeni neked.
@@ -248,7 +254,7 @@
                     <label class="custom-control-label" for="playerCount6">6+</label>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Komplexitás</p>
                 <small class="form-text text-muted mb-2">Jelöld meg az alábbi skálán, hogy elsősorban milyen
                     komplexitású játékokat szeretnél kapni. Többet is megjelölhetsz.</small>
@@ -270,7 +276,7 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Játékidő</p>
                 <small class="form-text text-muted mb-2">Jelöld meg az alábbi skálán, hogy elsősorban milyen hosszú
                     játékokat szeretnél kapni. Többet is megjelölhetsz.</small>
@@ -292,7 +298,7 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Sorolj fel néhányat a kedvenc játékaid közül!</p>
                 <small class="form-text text-muted mb-2">Figyelem, az itt szereplő konkrét játékok is előfordulhatnak
                     majd a
@@ -300,37 +306,37 @@
                 <textarea class="form-control" id="favourites"></textarea>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Szeretnél kooperatív játékokat?</p>
-                <select class="custom-select" id="coop">
+                <select class="select2" style="width: 100%" id="coop">
                     <option value="1">Igen</option>
                     <option value="0">Nem</option>
                     <option selected value="2">Mindegy</option>
                 </select>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Csak olyan játékokat szeretnél, amik ketten is jók?</p>
-                <select class="custom-select" id="twoplayer">
+                <select class="select2" style="width: 100%" id="twoplayer">
                     <option value="1">Igen</option>
                     <option selected value="0">Nem</option>
                 </select>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Nyelvfüggetlen játékok</p>
-                <select class="custom-select" id="language">
+                <select class="select2" style="width: 100%" id="language">
                     <option selected value="HU, EN">Jöhetnek angol nyelvű és nem teljesen nyelvfüggetlen játékok is.
                         (Például: angol szöveg a kártyákon.)</option>
                     <option value="HU">Csak magyar nyelvű, vagy nyelvfüggetlen játékokat szeretnék kapni.</option>
                 </select>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Szeretnél gyerekjátékokat?</p>
                 <small class="form-text text-muted mb-2">5. osztálytól felfelé már inkább a könnyedebb felnőtt játékokat
                     ajánljuk.</small>
-                <select class="custom-select" id="children">
+                <select class="select2" style="width: 100%" id="children">
                     <option selected value="0">Nem</option>
                     <option value="1">Igen, minden csomagban egyet. (1-2. osztályos gyerekeknek)</option>
                     <option value="2">Igen, minden csomagban egyet. (3-4. osztályos gyerekeknek)</option>
@@ -339,7 +345,7 @@
                 </select>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Bármilyen egyéb üzenet:</p>
                 <textarea class="form-control" id="note"></textarea>
             </div>
@@ -356,9 +362,23 @@
         <fieldset>
 
             <p class="h3 text-center">Szállítási és számlázási információk</p>
-            <div class="form-group">
+
+            <div class="form-group container">
+                <p class="h3 pt-4">Melyik csomagra szeretnél előfizetni?</p>
+                <select class="select2" style="width: 100%" id="productid">
+                    <option value="2">A - Kéthetente egy csomag, alkalmanként 3 játékkal, három hónapig (6 kiszállítás)
+                        - 23.850,- Ft</option>
+                    <option selected value="1">B - Havonta egy csomag, alkalmanként 3 játékkal, három hónapig (3
+                        kiszállítás) - 14.850,- Ft</option>
+                    <option value="3">C - Kéthavonta egy csomag, alkalmanként 4 játékkal, hat hónapig (3 kiszállítás) -
+                        19.950,- Ft</option>
+                    <option value="4">Egy csomag, három játékkal, két hétre, előfizetés nélkül - 4.490,- Ft (csak Foxposttal elérhető)</option>
+                </select>
+            </div>
+
+            <div class="form-group container">
                 <label class="pt-4" for="courier">Válassz szállítási módot:</label>
-                <select class="custom-select" id="courier">
+                <select class="select2" style="width: 100%" id="courier">
                     <option selected value="Foxpost">Foxpost csomagautomata</option>
                     <option value="24h">Házhoz szállítás</option>
                 </select>
@@ -368,21 +388,14 @@
                 <div class="form-group">
                     <iframe frameborder="0" loading="lazy" src="https://cdn.foxpost.hu/apt-finder/v1/app/?theme=dark"
                         width="100%" height="600px"></iframe>
-                    <sp class="h4">Választott automata:</p>
-                    <input type="text" class="form-control" id="foxpost" readonly></input>
+                    <p class="h4">Választott automata:</p>
+                        <input type="text" class="form-control" id="foxpost" readonly></input>
                 </div>
             </div>
 
-            <div class="form-group">
-                <p class="h3 pt-4">Melyik csomagra szeretnél előfizetni?</p>
-                <select class="custom-select" id="productid">
-                    <option value="2">A - Kéthetente egy csomag, alkalmanként 3 játékkal, három hónapig (6 kiszállítás) - 23.850,- Ft</option>
-                    <option selected value="1">B - Havonta egy csomag, alkalmanként 3 játékkal, három hónapig (3 kiszállítás) - 14.850,- Ft</option>
-                    <option value="3">C - Kéthavonta egy csomag, alkalmanként 4 játékkal, hat hónapig (3 kiszállítás) - 19.950,- Ft</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
+
+            <div class="form-group container pt-4">
+
                 <label for="name">Név:</label>
                 <input type="text" class="form-control" placeholder="Név" id="name">
 
@@ -395,16 +408,20 @@
                 <label for="postcode">Irányítószám:</label>
                 <input type="text" class="form-control" placeholder="Irányítószám" id="postcode">
 
-                <label for="city">Település</label>
+                <label for="city">Település:</label>
                 <input type="text" class="form-control" placeholder="Település" id="city">
 
-                <label for="addr1">Utca</label>
+                <label for="addr1">Utca:</label>
                 <input type="text" class="form-control" placeholder="Utca" id="addr1">
 
-                <label for="addr2">Házszám, emelet, ajtó</label>
-                <input type="text" class="form-control" placeholder="Utca" id="addr2">
+                <label for="addr2">Házszám, emelet, ajtó:</label>
+                <input type="text" class="form-control" placeholder="Házszám, emelet, ajtó:" id="addr2">
+                <div class="foxpost-hide">
+                    <label for="addrnote">Egyéb információ a futárnak</label>
+                    <input type="text" class="form-control" placeholder="Megjegyzés" id="addrnote">
+                </div>
             </div>
-            
+
 
 
 

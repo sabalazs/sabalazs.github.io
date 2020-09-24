@@ -1,15 +1,13 @@
-//filter
 $(document).ready(function () {
+    //filter
     $(".search-box").on("keyup", function () {
         var value = $(this).val().toLowerCase();
         $(this).siblings(".card-container").find(".card").filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });
-});
 
-//select a game
-$(document).ready(function () {
+    //select a game
     var numOfSelectedGames = 0;
     $(".selectbtn").click(function () {
         let containerId = $(this).parents(".list-container").attr("id");
@@ -41,11 +39,9 @@ $(document).ready(function () {
             alert("Maximum 50 játékot választhatsz ki.");
         };
     });
-});
 
 
-//navigation
-$(document).ready(function () {
+    //navigation
     $('form fieldset:first-child').fadeIn('slow');
 
     $(".btn-next").on("click", function () {
@@ -63,34 +59,50 @@ $(document).ready(function () {
             window.scrollTo(0, 0);
         });
     });
-});
 
+    //custom Select2 select menus 
+    $('.select2').select2({
+        width: 'resolve', // need to override the changed default
+        minimumResultsForSearch: -1 //to hide the searchbox
+    });
 
-//delivery page
-$(document).ready(function () {
+    //delivery page
     $("#courier").change(function () {
-        console.log($(this).val());
         if ($(this).val() == "Foxpost") {
             $('#foxpost-div').show();
             $('#foxpost-div').attr('required', '');
             $('#foxpost-div').attr('data-error', 'This field is required.');
+            $('.foxpost-hide').hide();
         } else {
             $('#foxpost-div').hide();
             $('#foxpost-div').removeAttr('required');
             $('#foxpost-div').removeAttr('data-error');
+            $('.foxpost-hide').show();
         }
     });
+    $("#courier").trigger("change");
+    $("#productid").change(function () {
+        if ($(this).val() == 4) {
+            $('#courier').val('Foxpost');
+            $('#courier').trigger('change');
+            $("#courier").prop("disabled", true);            
+        } else {
+            $("#courier").prop("disabled", false);       
+            
+        }
+    });
+
+    //Foxpost plugin
+    function receiveMessage(event) {
+        // if (event.origin !== 'https://cdn.foxpost.hu') {return};
+        var apt = JSON.parse(event.data);
+        $('#foxpost').val(apt.name, apt.findme);
+        if ($("#foxpost").val()!="") {
+            var element = document.getElementById("foxpost");
+            element.scrollIntoView();
+        }
+    }
+    window.addEventListener('message', receiveMessage, false);
+
+
 });
-//$("#courier").trigger("change");
-
-
-//Foxpost plugin
-function receiveMessage(event) {
-    // if (event.origin !== 'https://cdn.foxpost.hu') {return};
-    var apt = JSON.parse(event.data);
-
-    $('#foxpost').val(apt.name, apt.findme);
-}
-
-window.addEventListener('message', receiveMessage, false);
-
