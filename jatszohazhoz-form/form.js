@@ -110,7 +110,7 @@ $(document).ready(function () {
     dropdown.append('<option selected="true" disabled>Válassz automatát</option>');
     dropdown.prop('selectedIndex', 0);
 
-    const foxpost_url = 'http://cdn.foxpost.hu/foxpost_terminals_extended_v3.json';
+    const foxpost_url = 'https://cdn.foxpost.hu/foxpost_terminals_extended_v3.json';
 
     $.getJSON(foxpost_url, function (data) {
         $.each(data, function (index, item) {
