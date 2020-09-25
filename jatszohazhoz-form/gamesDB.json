@@ -1,0 +1,507 @@
+[
+  {
+    "code": "SAGR",
+    "name": "Sagrada",
+    "icon": "SAGR.jpg"
+  },
+  {
+    "code": "SINT",
+    "name": "Azul sintra",
+    "icon": "SINT.jpg"
+  },
+  {
+    "code": "7PAR",
+    "name": "7 csoda párbaj",
+    "icon": "7PAR.jpg"
+  },
+  {
+    "code": "TEAM",
+    "name": "Team 3",
+    "icon": "TEAM.jpg"
+  },
+  {
+    "code": "KING",
+    "name": "Kingdomino",
+    "icon": "KING.jpg"
+  },
+  {
+    "code": "SPLE",
+    "name": "Splendor",
+    "icon": "SPLE.jpg"
+  },
+  {
+    "code": "SKYE",
+    "name": "Skye szigete",
+    "icon": "SKYE.jpg"
+  },
+  {
+    "code": "PAND",
+    "name": "Pandemic",
+    "icon": "PAND.jpg"
+  },
+  {
+    "code": "TINT",
+    "name": "Tiny Towns",
+    "icon": "TINT.jpg"
+  },
+  {
+    "code": "FUSZ",
+    "name": "Fűszerút",
+    "icon": "FUSZ.jpg"
+  },
+  {
+    "code": "0LEO",
+    "name": "Leo",
+    "icon": "0LEO.jpg"
+  },
+  {
+    "code": "COLO",
+    "name": "Coloretto",
+    "icon": "COLO.jpg"
+  },
+  {
+    "code": "JAIP",
+    "name": "Jaipur",
+    "icon": "JAIP.jpg"
+  },
+  {
+    "code": "PATC",
+    "name": "Patchwork",
+    "icon": "PATC.jpg"
+  },
+  {
+    "code": "NYUG",
+    "name": "A nyugati királyság építőmesterei",
+    "icon": "NYUG.jpg"
+  },
+  {
+    "code": "MARS",
+    "name": "Mars Terraformálása",
+    "icon": "MARS.jpg"
+  },
+  {
+    "code": "MIND",
+    "name": "The Mind",
+    "icon": "MIND.jpg"
+  },
+  {
+    "code": "MAZE",
+    "name": "Magic Maze",
+    "icon": "MAZE.jpg"
+  },
+  {
+    "code": "AZUL",
+    "name": "Azul",
+    "icon": "AZUL.jpg"
+  },
+  {
+    "code": "ALAR",
+    "name": "Álarcosbál",
+    "icon": "ALAR.jpg"
+  },
+  {
+    "code": "BETW",
+    "name": "Between two cities",
+    "icon": "BETW.jpg"
+  },
+  {
+    "code": "BEAR",
+    "name": "Barenpark",
+    "icon": "BEAR.jpg"
+  },
+  {
+    "code": "BISO",
+    "name": "Bison",
+    "icon": "BISO.jpg"
+  },
+  {
+    "code": "CSOT",
+    "name": "Csótányleves",
+    "icon": "CSOT.jpg"
+  },
+  {
+    "code": "FENE",
+    "name": "Fedőnevek - négyszemközt",
+    "icon": "FENE.jpg"
+  },
+  {
+    "code": "GAIA",
+    "name": "Gaia Projekt",
+    "icon": "GAIA.jpg"
+  },
+  {
+    "code": "HANA",
+    "name": "Hanabi",
+    "icon": "HANA.jpg"
+  },
+  {
+    "code": "HAJI",
+    "name": "Hanamikoji",
+    "icon": "HAJI.jpg"
+  },
+  {
+    "code": "00K2",
+    "name": "K2",
+    "icon": "00K2.jpg"
+  },
+  {
+    "code": "ELVS",
+    "name": "Elveszett városok",
+    "icon": "ELVS.jpg"
+  },
+  {
+    "code": "CIRC",
+    "name": "Meeple Circus",
+    "icon": "CIRC.jpg"
+  },
+  {
+    "code": "MINO",
+    "name": "Mino & Tauri",
+    "icon": "MINO.jpg"
+  },
+  {
+    "code": "MUSE",
+    "name": "Múzsa",
+    "icon": "MUSE.jpg"
+  },
+  {
+    "code": "PUER",
+    "name": "Puerto Rico",
+    "icon": "PUER.jpg"
+  },
+  {
+    "code": "SMAL",
+    "name": "Small World",
+    "icon": "SMAL.jpg"
+  },
+  {
+    "code": "SUSH",
+    "name": "Sushi go!",
+    "icon": "SUSH.jpg"
+  },
+  {
+    "code": "TISI",
+    "name": "Tiltott Sivatag",
+    "icon": "TISI.jpg"
+  },
+  {
+    "code": "TWIN",
+    "name": "Twin it",
+    "icon": "TWIN.jpg"
+  },
+  {
+    "code": "UDVA",
+    "name": "Üdv a mélyben",
+    "icon": "UDVA.jpg"
+  },
+  {
+    "code": "IMHO",
+    "name": "Imhotep",
+    "icon": "IMHO.jpg"
+  },
+  {
+    "code": "PHOT",
+    "name": "Photosynthesis",
+    "icon": "PHOT.jpg"
+  },
+  {
+    "code": "FESZ",
+    "name": "Fesztáv",
+    "icon": "FESZ.jpg"
+  },
+  {
+    "code": "AGRI",
+    "name": "Agricola",
+    "icon": "AGRI.jpg"
+  },
+  {
+    "code": "ETHN",
+    "name": "Ethnos",
+    "icon": "ETHN.jpg"
+  },
+  {
+    "code": "SHOB",
+    "name": "Shobu",
+    "icon": "SHOB.jpg"
+  },
+  {
+    "code": "HIVE",
+    "name": "Hive",
+    "icon": "HIVE.jpg"
+  },
+  {
+    "code": "KARI",
+    "name": "Kariba",
+    "icon": "KARI.jpg"
+  },
+  {
+    "code": "KELE",
+    "name": "Century - A kelet csodái",
+    "icon": "KELE.jpg"
+  },
+  {
+    "code": "MONP",
+    "name": "Monster Park",
+    "icon": "MONP.jpg"
+  },
+  {
+    "code": "QUOR",
+    "name": "Quoridor",
+    "icon": "QUOR.jpg"
+  },
+  {
+    "code": "ISTA",
+    "name": "Istanbul",
+    "icon": "ISTA.jpg"
+  },
+  {
+    "code": "SAJT",
+    "name": "Sajtbirodalom",
+    "icon": "SAJT.jpg"
+  },
+  {
+    "code": "CONK",
+    "name": "Concept Kids: állatok",
+    "icon": "CONK.jpg"
+  },
+  {
+    "code": "ESCA",
+    "name": "Escape",
+    "icon": "ESCA.jpg"
+  },
+  {
+    "code": "MINX",
+    "name": "The Mind Extrém",
+    "icon": "MINX.jpg"
+  },
+  {
+    "code": "SMIL",
+    "name": "Smile",
+    "icon": "SMIL.jpg"
+  },
+  {
+    "code": "PLAN",
+    "name": "Planet",
+    "icon": "PLAN.jpg"
+  },
+  {
+    "code": "MARA",
+    "name": "Marrakech",
+    "icon": "MARA.jpg"
+  },
+  {
+    "code": "UNDE",
+    "name": "Underwater Cities",
+    "icon": "UNDE.jpg"
+  },
+  {
+    "code": "ILLU",
+    "name": "Illusion",
+    "icon": "ILLU.jpg"
+  },
+  {
+    "code": "SANT",
+    "name": "Santorini",
+    "icon": "SANT.jpg"
+  },
+  {
+    "code": "KORI",
+    "name": "Korinthosz",
+    "icon": "KORI.jpg"
+  },
+  {
+    "code": "QUAD",
+    "name": "Quadropolis",
+    "icon": "QUAD.jpg"
+  },
+  {
+    "code": "AMSZ",
+    "name": "Lépten-nyomon Amszterdam",
+    "icon": "AMSZ.jpg"
+  },
+  {
+    "code": "NYOL",
+    "name": "Nyolc perces birodalom",
+    "icon": "NYOL.jpg"
+  },
+  {
+    "code": "KUFL",
+    "name": "Jó étvágyat, kuflik!",
+    "icon": "KUFL.jpg"
+  },
+  {
+    "code": "TICK",
+    "name": "Ticket to Ride",
+    "icon": "TICK.jpg"
+  },
+  {
+    "code": "MEMO",
+    "name": "Memo tropico",
+    "icon": "MEMO.jpg"
+  },
+  {
+    "code": "TISZ",
+    "name": "Tiltott Sziget",
+    "icon": "TISZ.jpg"
+  },
+  {
+    "code": "AZKP",
+    "name": "Azul - A királyi pavilon",
+    "icon": "AZKP.jpg"
+  },
+  {
+    "code": "UBON",
+    "name": "Ubongo",
+    "icon": "UBON.jpg"
+  },
+  {
+    "code": "ELVA",
+    "name": "Elvarázsolt Labirintus",
+    "icon": "ELVA.jpg"
+  },
+  {
+    "code": "PARI",
+    "name": "Paris: New Eden",
+    "icon": "PARI.jpg"
+  },
+  {
+    "code": "MIST",
+    "name": "Misty",
+    "icon": "MIST.jpg"
+  },
+  {
+    "code": "FANK",
+    "name": "Fánkfaló fenevadak",
+    "icon": "FANK.jpg"
+  },
+  {
+    "code": "MATC",
+    "name": "Match madness",
+    "icon": "MATC.jpg"
+  },
+  {
+    "code": "KIBU",
+    "name": "Kingdom Builder",
+    "icon": "KIBU.jpg"
+  },
+  {
+    "code": "CALE",
+    "name": "Clans of Caledonia",
+    "icon": "CALE.jpg"
+  },
+  {
+    "code": "MOLY",
+    "name": "Csaló Molyok",
+    "icon": "MOLY.jpg"
+  },
+  {
+    "code": "ARAN",
+    "name": "Aranyásók",
+    "icon": "ARAN.jpg"
+  },
+  {
+    "code": "LABX",
+    "name": "Labirinthyx",
+    "icon": "LABX.jpg"
+  },
+  {
+    "code": "VITI",
+    "name": "Viticulture",
+    "icon": "VITI.jpg"
+  },
+  {
+    "code": "ALMO",
+    "name": "Álmodj velem",
+    "icon": "ALMO.jpg"
+  },
+  {
+    "code": "ALHT",
+    "name": "Álmodj hát",
+    "icon": "ALHT.jpg"
+  },
+  {
+    "code": "MAXT",
+    "name": "Max the tomcat",
+    "icon": "MAXT.jpg"
+  },
+  {
+    "code": "TUTA",
+    "name": "Tutajra fel",
+    "icon": "TUTA.jpg"
+  },
+  {
+    "code": "SCYT",
+    "name": "Scythe",
+    "icon": "SCYT.jpg"
+  },
+  {
+    "code": "BREK",
+    "name": "Breki",
+    "icon": "BREK.jpg"
+  },
+  {
+    "code": "HATS",
+    "name": "Hatsuden",
+    "icon": "HATS.jpg"
+  },
+  {
+    "code": "CATO",
+    "name": "Catowl",
+    "icon": "CATO.jpg"
+  },
+  {
+    "code": "FAMI",
+    "name": "Familou",
+    "icon": "FAMI.jpg"
+  },
+  {
+    "code": "VILL",
+    "name": "Villa paletti",
+    "icon": "VILL.jpg"
+  },
+  {
+    "code": "MMMM",
+    "name": "Mmmm!",
+    "icon": "MMMM.jpg"
+  },
+  {
+    "code": "CSOD",
+    "name": "7 Csoda",
+    "icon": "CSOD.jpg"
+  },
+  {
+    "code": "CASH",
+    "name": "Cash`n`Guns",
+    "icon": "CASH.jpg"
+  },
+  {
+    "code": "ELAD",
+    "name": "Eladlak",
+    "icon": "ELAD.jpg"
+  },
+  {
+    "code": "CATL",
+    "name": "Cat Lady",
+    "icon": "CATL.jpg"
+  },
+  {
+    "code": "ELDO",
+    "name": "Eldorádó legendája",
+    "icon": "ELDO.jpg"
+  },
+  {
+    "code": "KURU",
+    "name": "Kuruzslók Quedlinburgban",
+    "icon": "KURU.jpg"
+  },
+  {
+    "code": "KLAN",
+    "name": "Klank!",
+    "icon": "KLAN.jpg"
+  },
+  {
+    "code": "KORK",
+    "name": "Korkép",
+    "icon": "KORK.jpg"
+  }
+]

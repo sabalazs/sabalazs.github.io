@@ -1,4 +1,22 @@
-$(document).ready(function () {
+ //create cards
+ const createCards = $.getJSON("gamesDB.json", function (response) {
+     response.forEach(function (element, index) {
+         $('.card-columns').append(`
+         <div class="card p-2">
+         <a href="#/" class="selectbtn text-decoration-none text-reset">
+             <div class="text-center">
+                 <h5 class="card-title">${element.name}</h5>
+                 <img src="/jatszohazhoz-form/icons/${element.icon}" alt="" class="card-img-top">
+             </div>
+         </a>
+          </div>
+          `);            
+     });
+ });
+
+$.when($.ready).then(function () {
+
+
     //filter
     $(".search-box").on("keyup", function () {
         var value = $(this).val().toLowerCase();
