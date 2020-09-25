@@ -14,7 +14,7 @@
      });
  });
 
-$.when($.ready).then(function () {
+$.when($.ready).then(createCards).then(function () {
 
 
     //filter
