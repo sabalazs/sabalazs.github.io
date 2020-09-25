@@ -1,22 +1,24 @@
- //create cards
- const createCards = $.getJSON("gamesDB.json", function (response) {
-     response.forEach(function (element, index) {
-         $('.card-columns').append(`
-         <div class="card p-2">
-         <a href="#/" class="selectbtn text-decoration-none text-reset">
-             <div class="text-center">
-                 <h5 class="card-title">${element.name}</h5>
-                 <img src="/jatszohazhoz-form/icons/${element.icon}" alt="" class="card-img-top">
-             </div>
-         </a>
-          </div>
-          `);            
-     });
- });
+//create cards
 
-$.when($.ready).then(createCards).then(function () {
+$(document).ready(function () {
+    const createCards = $.getJSON("gamesDB.json", function (response) {
+        response.forEach(function (element, index) {
+            $('.card-columns').append(`
+                <div class="card p-2">
+                <a href="#/" class="selectbtn text-decoration-none text-reset">
+                    <div class="text-center">
+                        <h5 class="card-title">${element.name}</h5>
+                        <img src="/jatszohazhoz-form/icons/${element.icon}" alt="" class="card-img-top">
+                    </div>
+                </a>
+                </div>
+            `);
+        });
+        x();
+    });
+});
 
-
+const x = function () {
     //filter
     $(".search-box").on("keyup", function () {
         var value = $(this).val().toLowerCase();
@@ -135,4 +137,4 @@ $.when($.ready).then(createCards).then(function () {
             dropdown.append($('<option></option>').val(item.operator_id).text(`${item.name} - ${item.address}`));
         });
     });
-});
+};
