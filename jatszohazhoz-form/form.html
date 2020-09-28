@@ -31,45 +31,66 @@
 </head>
 
 <body>
-    <div class="jumbotron text-center">
+    <!-- <div class="jumbotron text-center">
         <img class="logo" src="/jatszohazhoz-form/images/jatszohazprojekt_logo.png" alt="Játszóház Projekt logo">
-    </div>
+    </div> -->
 
-    <form action="" class="container">
+    <form action="" class="">
 
         <!-- FIRST PAGE -->
 
         <fieldset>
-            <div class="container list-container" id="wishlist">
-                <p class="h3 text-center">Melyik játékokat próbálnád ki szívesen?</p>
-                <small class="form-text text-muted mb-2">
-                    Nem ismersz egyet sem? Semmi gond, nyugodtan hagyd ki ezt a lépést és mi gondoskodunk róla, hogy
-                    olyan játékokat kapj, amik tetszeni fognak.<br><br>Pontosan tudod mit szeretnél? Válaszd ki a
-                    vágyott játékokat fontossági sorrendben! Igyekszünk minden kérésnek eleget tenni, de nem tudjuk
-                    garantálni, hogy az itt kiválasztott játékokat fogod kapni.</small>
-
-
-                <div class="container p-3">
-                    <ul class="list-group game-list"></ul>
-                </div>
-                <input class="form-control p-3 mb-2 search-box" type="text" placeholder="Keresés..">
-                <div class="container card-container">
-
-                    <div class="card-columns">
-                        <!-- CARDS APPENDED HERE BY JS -->
+            <div class="table">
+                <div class="row navbar">
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <p class="h3 text-uppercase text-center text-white">Kívánságlista</p>
+                    </div>
+                    <div class="col">
+                        <div class="btn-next btn btn-light m-2 float-right">Tovább</div>
                     </div>
                 </div>
             </div>
-            <div class="fixed-bottom px-5">
-                <div class="container">
-                    <div class="btn-next btn btn-primary float-right m-2">Tovább</div>
+
+            <div class="container text-center">
+            </div>
+            <div class="table w-75 m-auto">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center">
+                        <div class="text-center">
+                            <p><strong>Nem ismersz egyet sem?</strong><br>Semmi gond. Nyugodtan hagyd ki ezt a
+                                lépést és mi gondoskodunk róla, hogy olyan játékokat
+                                kapj, amik tetszeni fognak.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 text-center">
+                        <p><strong>Pontosan tudod, hogy mit szeretnél?</strong><br> Válaszd ki a vágyott játékokat
+                            fontossági
+                            sorrendben! Igyekszünk minden kérésnek eleget tenni, de nem tudjuk
+                            garantálni, hogy az itt kiválasztott játékokat fogod kapni.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-container" id="wishlist">
+
+                <div class="container p-3 text-center w-75">
+                    <ul class="list-group game-list"></ul>
+                </div>
+                <input class="form-control mx-auto mb-5 search-box w-75" type="text" placeholder="Keresés..">
+                <div class="container card-container">
+
+                    <div class="card-columns">
+                        <!-- CARDS APPENDED HERE BY SCRIPT -->
+                    </div>
                 </div>
             </div>
         </fieldset>
 
         <!-- SECOND PAGE -->
 
-        <fieldset>
+        <fieldset class="container">
             <div class="container list-container" id="unwanted">
                 <p class="h3 text-center">Melyik játékokat NEM szeretnéd kapni a csomagodban?</p>
                 <small class="form-text text-muted mb-2">Például mert megvan otthon, vagy esetleg már próbáltad és nem
@@ -82,7 +103,7 @@
                 <input class="form-control m-3 search-box" type="text" placeholder="Keresés..">
                 <div class="container card-container">
 
-                    <div class="card-columns">                        
+                    <div class="card-columns">
                         <!-- CARDS APPENDED HERE BY JS -->
                     </div>
 
@@ -99,7 +120,7 @@
         <!-- THIRD PAGE -->
 
         <fieldset class="container">
-            <div class="form-group container">
+            <div class="form-group">
                 <p class="h3 text-center">Preferenciák</p>
                 <small class="form-text text-muted mb-5">
                     Ezek a kérdések segítenek nekünk meghatározni, hogy milyen típusú játékok fognak tetszeni neked.
@@ -129,7 +150,7 @@
                     <label class="custom-control-label" for="playerCount6">6+</label>
                 </div>
             </div>
-            <div class="form-group container">
+            <div class="form-group">
                 <p class="h3 pt-4">Komplexitás</p>
                 <small class="form-text text-muted mb-2">Jelöld meg az alábbi skálán, hogy elsősorban milyen
                     komplexitású játékokat szeretnél kapni. Többet is megjelölhetsz.</small>
@@ -151,7 +172,7 @@
                 </div>
             </div>
 
-            <div class="form-group container">
+            <div class="form-group">
                 <p class="h3 pt-4">Játékidő</p>
                 <small class="form-text text-muted mb-2">Jelöld meg az alábbi skálán, hogy elsősorban milyen hosszú
                     játékokat szeretnél kapni. Többet is megjelölhetsz.</small>
@@ -173,7 +194,7 @@
                 </div>
             </div>
 
-            <div class="form-group container">
+            <div class="form-group">
                 <p class="h3 pt-4">Sorolj fel néhányat a kedvenc játékaid közül!</p>
                 <small class="form-text text-muted mb-2">Figyelem, az itt szereplő konkrét játékok is előfordulhatnak
                     majd a
@@ -181,7 +202,7 @@
                 <textarea class="form-control" id="favourites"></textarea>
             </div>
 
-            <div class="form-group container">
+            <div class="form-group">
                 <p class="h3 pt-4">Szeretnél kooperatív játékokat?</p>
                 <select class="select2" style="width: 100%" id="coop">
                     <option value="1">Igen</option>
@@ -190,7 +211,7 @@
                 </select>
             </div>
 
-            <div class="form-group container">
+            <div class="form-group">
                 <p class="h3 pt-4">Csak olyan játékokat szeretnél, amik ketten is jók?</p>
                 <select class="select2" style="width: 100%" id="twoplayer">
                     <option value="1">Igen</option>
@@ -198,7 +219,7 @@
                 </select>
             </div>
 
-            <div class="form-group container">
+            <div class="form-group">
                 <p class="h3 pt-4">Nyelvfüggetlen játékok</p>
                 <select class="select2" style="width: 100%" id="language">
                     <option selected value="HU, EN">Jöhetnek angol nyelvű és nem teljesen nyelvfüggetlen játékok is.
@@ -207,7 +228,7 @@
                 </select>
             </div>
 
-            <div class="form-group container">
+            <div class="form-group">
                 <p class="h3 pt-4">Szeretnél gyerekjátékokat?</p>
                 <small class="form-text text-muted mb-2">5. osztálytól felfelé már inkább a könnyedebb felnőtt játékokat
                     ajánljuk.</small>
@@ -220,7 +241,7 @@
                 </select>
             </div>
 
-            <div class="form-group container">
+            <div class="form-group">
                 <p class="h3 pt-4">Bármilyen egyéb üzenet:</p>
                 <textarea class="form-control" id="note"></textarea>
             </div>
@@ -234,11 +255,11 @@
 
         <!-- 4th PAGE -->
 
-        <fieldset>
+        <fieldset class="container">
 
             <p class="h3 text-center">Szállítási és számlázási információk</p>
 
-            <div class="form-group container">
+            <div class="form-group">
                 <p class="h3 pt-4">Melyik csomagra szeretnél előfizetni?</p>
                 <select class="select2" style="width: 100%" id="productid">
                     <option value="2">A - Kéthetente egy csomag, alkalmanként 3 játékkal, három hónapig (6 kiszállítás)
@@ -247,18 +268,19 @@
                         kiszállítás) - 14.850,- Ft</option>
                     <option value="3">C - Kéthavonta egy csomag, alkalmanként 4 játékkal, hat hónapig (3 kiszállítás) -
                         19.950,- Ft</option>
-                    <option value="4">Egy csomag, három játékkal, két hétre, előfizetés nélkül - 4.490,- Ft (csak Foxposttal elérhető)</option>
+                    <option value="4">Egy csomag, három játékkal, két hétre, előfizetés nélkül - 4.490,- Ft (csak
+                        Foxposttal elérhető)</option>
                 </select>
             </div>
 
-            <div class="form-group container">
+            <div class="form-group">
                 <label class="h3 pt-4" for="courier">Szállítási mód:</label>
                 <select class="select2" style="width: 100%" id="courier">
                     <option selected value="Foxpost">Foxpost csomagautomata</option>
                     <option value="24h">Házhoz szállítás</option>
                 </select>
             </div>
-            
+
             <!-- <div id="foxpost-div" class="pt-4">
                 <div class="form-group">
                     <iframe frameborder="0" loading="lazy" src="https://cdn.foxpost.hu/apt-finder/v1/app/?theme=dark"
@@ -267,14 +289,15 @@
                     <input type="text" class="form-control" id="foxpost" readonly></input>
                 </div>
             </div> -->
-            
-            <div class="form-group container pt3" id="foxpost-div">
+
+            <div class="form-group pt3" id="foxpost-div">
                 <select class="select2" style="width: 100%" id="foxpost_machine">
                 </select>
-                <a href="https://foxpost.hu/csomagautomatak" target="_blank"><small>Térképes kereső a Foxpost oldalán</small></a>
+                <a href="https://foxpost.hu/csomagautomatak" target="_blank"><small>Térképes kereső a Foxpost
+                        oldalán</small></a>
             </div>
 
-            <div class="form-group container pt-4">
+            <div class="form-group pt-4">
 
                 <label for="name">Név:</label>
                 <input type="text" class="form-control mb-3" placeholder="Név" id="name">

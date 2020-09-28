@@ -36,19 +36,19 @@ fieldset {
     padding-bottom: 4rem;
 }
 
-.logo {
-    max-height: 7rem;
-}
-
 .top-title {
     color: #a93033;
 }
 
-.fixed-bottom {
-    background-color: #eeeeee;
+.navbar {
+    background-color: #a93033;
 }
 
 .form-group {
     max-width: 800px;
     margin: auto;
+}
+
+small {
+    max-width: 800px;
 }
