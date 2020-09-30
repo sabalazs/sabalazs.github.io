@@ -52,3 +52,7 @@ fieldset {
 small {
     max-width: 800px;
 }
+
+.logo {
+    max-height: 3rem;
+}
