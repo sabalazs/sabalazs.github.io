@@ -62,19 +62,19 @@ const x = function () {
 
 
     //navigation
-    $('form fieldset:first-child').fadeIn('slow');
+    $('form .form-page:first-child').fadeIn('slow');
 
     $(".btn-next").on("click", function () {
-        let parentFieldset = $(this).parents('fieldset');
-        parentFieldset.fadeOut(400, function () {
+        let parentFormPage = $(this).parents('.form-page');
+        parentFormPage.fadeOut(400, function () {
             $(this).next().fadeIn();
             window.scrollTo(0, 0);
         });
     });
 
     $(".btn-back").on("click", function () {
-        let parentFieldset = $(this).parents('fieldset');
-        parentFieldset.fadeOut(400, function () {
+        let parentFormPage = $(this).parents('.form-page');
+        parentFormPage.fadeOut(400, function () {
             $(this).prev().fadeIn();
             window.scrollTo(0, 0);
         });

@@ -41,7 +41,7 @@
 
         <!-- FIRST PAGE -->
 
-        <fieldset>
+        <div class="form-page">
             <div class="container">
                 <div class="row navbar">
                     <div class="col-4">
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="col-4 text-center">
-                        <img class="logo" src="/jatszohazhoz-form/images/jatszohazprojekt_logo_feher.png"
+                        <img class="logo" src="/jatszohazhoz-form/images/jatszohazprojekt_logo_piros.png"
                             alt="Játszóház Projekt logo">
                     </div>
                     <div class="col-4">
@@ -88,11 +88,11 @@
                     </div>
                 </div>
             </div>
-        </fieldset>
+        </div>
 
         <!-- SECOND PAGE -->
 
-        <fieldset>
+        <div class="form-page">
             <div class="container">
                 <div class="row navbar">
                     <div class="col-4">
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                     <div class="col-4 text-center">
-                        <img class="logo" src="/jatszohazhoz-form/images/jatszohazprojekt_logo_feher.png"
+                        <img class="logo" src="/jatszohazhoz-form/images/jatszohazprojekt_logo_piros.png"
                             alt="Játszóház Projekt logo">
                     </div>
                     <div class="col-4">
@@ -134,11 +134,11 @@
 
                 </div>
             </div>
-        </fieldset>
+        </div>
 
         <!-- THIRD PAGE -->
 
-        <fieldset class="container">
+        <div class="form-page pb-0">
 
             <div class="container">
                 <div class="row navbar">
@@ -149,7 +149,7 @@
                         </div>
                     </div>
                     <div class="col-4 text-center">
-                        <img class="logo" src="/jatszohazhoz-form/images/jatszohazprojekt_logo_feher.png"
+                        <img class="logo" src="/jatszohazhoz-form/images/jatszohazprojekt_logo_piros.png"
                             alt="Játszóház Projekt logo">
                     </div>
                     <div class="col-4">
@@ -160,10 +160,10 @@
                 </div>
             </div>
 
-            <div class="form-group">            
-            <div class="container text-center mt-3">
-                <span class="h2">Preferenciák</span>
-            </div>
+            <div class="form-group container">
+                <div class="container text-center mt-3">
+                    <span class="h2">Preferenciák</span>
+                </div>
                 <small class="form-text text-muted mb-5">
                     Ezek a kérdések segítenek nekünk meghatározni, hogy milyen típusú játékok fognak tetszeni neked.
                     Nyugodtan kihagyhatod bármelyik kérdést, ha nem tudsz, vagy nem szeretnél válaszolni rá.
@@ -192,7 +192,7 @@
                     <label class="custom-control-label" for="playerCount6">6+</label>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Komplexitás</p>
                 <small class="form-text text-muted mb-2">Jelöld meg az alábbi skálán, hogy elsősorban milyen
                     komplexitású játékokat szeretnél kapni. Többet is megjelölhetsz.</small>
@@ -214,7 +214,7 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Játékidő</p>
                 <small class="form-text text-muted mb-2">Jelöld meg az alábbi skálán, hogy elsősorban milyen hosszú
                     játékokat szeretnél kapni. Többet is megjelölhetsz.</small>
@@ -236,7 +236,7 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Sorolj fel néhányat a kedvenc játékaid közül!</p>
                 <small class="form-text text-muted mb-2">Figyelem, az itt szereplő konkrét játékok is előfordulhatnak
                     majd a
@@ -244,7 +244,7 @@
                 <textarea class="form-control" id="favourites"></textarea>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Szeretnél kooperatív játékokat?</p>
                 <select class="select2" style="width: 100%" id="coop">
                     <option value="1">Igen</option>
@@ -253,7 +253,7 @@
                 </select>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Csak olyan játékokat szeretnél, amik ketten is jók?</p>
                 <select class="select2" style="width: 100%" id="twoplayer">
                     <option value="1">Igen</option>
@@ -261,7 +261,7 @@
                 </select>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Nyelvfüggetlen játékok</p>
                 <select class="select2" style="width: 100%" id="language">
                     <option selected value="HU, EN">Jöhetnek angol nyelvű és nem teljesen nyelvfüggetlen játékok is.
@@ -270,7 +270,7 @@
                 </select>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Szeretnél gyerekjátékokat?</p>
                 <small class="form-text text-muted mb-2">5. osztálytól felfelé már inkább a könnyedebb felnőtt játékokat
                     ajánljuk.</small>
@@ -283,15 +283,36 @@
                 </select>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Bármilyen egyéb üzenet:</p>
                 <textarea class="form-control" id="note"></textarea>
             </div>
-        </fieldset>
+
+            <div class="container mt-5">
+                <div class="row navbar">
+                    <div class="col-4">
+                        <div class="btn-back btn btn-light m-2 float-left d-flex align-items-center">
+                            <i class="material-icons">chevron_left</i>
+                            <span class="d-none d-md-block">Vissza</span>
+                        </div>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img class="logo" src="/jatszohazhoz-form/images/jatszohazprojekt_logo_piros.png"
+                            alt="Játszóház Projekt logo">
+                    </div>
+                    <div class="col-4">
+                        <div class="btn-next btn btn-light m-2 float-right d-flex align-items-center">
+                            <span class="d-none d-md-block">Tovább</span>
+                            <i class="material-icons">chevron_right</i></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
         <!-- 4th PAGE -->
 
-        <fieldset class="container">
+        <div class="form-page">
             <div class="container">
                 <div class="row navbar">
                     <div class="col-4">
@@ -301,7 +322,7 @@
                         </div>
                     </div>
                     <div class="col-4 text-center">
-                        <img class="logo" src="/jatszohazhoz-form/images/jatszohazprojekt_logo_feher.png"
+                        <img class="logo" src="/jatszohazhoz-form/images/jatszohazprojekt_logo_piros.png"
                             alt="Játszóház Projekt logo">
                     </div>
                     <div class="col-4">
@@ -316,7 +337,7 @@
                 <span class="h2">Szállítási és számlázási információk</span>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <p class="h3 pt-4">Melyik csomagra szeretnél előfizetni?</p>
                 <select class="select2" style="width: 100%" id="productid">
                     <option value="2">A - Kéthetente egy csomag, alkalmanként 3 játékkal, három hónapig (6 kiszállítás)
@@ -330,7 +351,7 @@
                 </select>
             </div>
 
-            <div class="form-group">
+            <div class="form-group container">
                 <label class="h3 pt-4" for="courier">Szállítási mód:</label>
                 <select class="select2" style="width: 100%" id="courier">
                     <option selected value="Foxpost">Foxpost csomagautomata</option>
@@ -338,23 +359,14 @@
                 </select>
             </div>
 
-            <!-- <div id="foxpost-div" class="pt-4">
-                <div class="form-group">
-                    <iframe frameborder="0" loading="lazy" src="https://cdn.foxpost.hu/apt-finder/v1/app/?theme=dark"
-                    width="100%" height="600px"></iframe>
-                    <p class="h4">Választott automata:</p>
-                    <input type="text" class="form-control" id="foxpost" readonly></input>
-                </div>
-            </div> -->
-
-            <div class="form-group pt3" id="foxpost-div">
+            <div class="form-group container pt-3" id="foxpost-div">
                 <select class="select2" style="width: 100%" id="foxpost_machine">
                 </select>
                 <a href="https://foxpost.hu/csomagautomatak" target="_blank"><small>Térképes kereső a Foxpost
                         oldalán</small></a>
             </div>
 
-            <div class="form-group pt-4">
+            <div class="form-group container pt-4">
 
                 <label for="name">Név:</label>
                 <input type="text" class="form-control mb-3" placeholder="Név" id="name">
@@ -387,7 +399,7 @@
                     <button type="submit" class="btn btn-lg btn-success m-2">Elküld</button>
                 </div>
             </div>
-        </fieldset>
+        </div>
 
     </form>
 

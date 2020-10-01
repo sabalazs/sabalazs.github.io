@@ -35,13 +35,13 @@ fieldset {
     display: none;
     padding-bottom: 4rem;
 }
+.form-page {
+    display: none;
+    padding-bottom: 4rem;
+}
 
 .top-title {
     color: #a93033;
-}
-
-.navbar {
-    background-color: #a93033;
 }
 
 .form-group {
@@ -55,4 +55,9 @@ small {
 
 .logo {
     max-height: 3rem;
+}
+
+.btn-light {
+    background-color: #a93033;
+    color: white;
 }
