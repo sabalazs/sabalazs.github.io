@@ -43,15 +43,43 @@ const x = function () {
             card.toggle();
             numOfSelectedGames++;
 
+            //remove card from the opposing list
+            console.log(containerId);
+            let opposingList = "";
+            if (containerId == "wishlist") {
+                opposingList = "unwanted";
+            } else if (containerId == "unwanted") {
+                opposingList = "wishlist";                
+            }
+            let cards = $(`#${opposingList} .card`);
+            for (let i = 0; i < cards.length; i++) {
+                if ($(cards[i]).find(".card-title").text() == game) {
+                    $(cards[i]).addClass("d-none");
+                }
+            }
+
             //add unselect function
             $(`#${containerId} .game-list :last-child`).click(function () {
+                game = $(this).text();
                 for (let i = 0; i < $(`#${containerId} .selected`).length; i++) {
-                    if ($($(`#${containerId} .selected`)[i]).find(".card-title").text() == $(this).text()) {
+                    if ($($(`#${containerId} .selected`)[i]).find(".card-title").text() == game) {
                         $($(`#${containerId} .selected`)[i]).addClass("card");
                         $($(`#${containerId} .selected`)[i]).toggle();
                         $($(`#${containerId} .selected`)[i]).removeClass("selected");
                         $(this).remove();
                         numOfSelectedGames--;
+                    }
+                }
+                let opposingList = "";
+                if (containerId == "wishlist") {
+                    opposingList = "unwanted";
+                } else if (containerId == "unwanted") {
+                    opposingList = "wishlist";                
+                }
+                let removedCards = $(`#${opposingList} .d-none`);
+                for (let i = 0; i < removedCards.length; i++) {
+                    if ($(removedCards[i]).find(".card-title").text() == game) {
+                        $(removedCards[i]).removeClass("d-none");
                     }
                 }
             });
@@ -111,18 +139,6 @@ const x = function () {
 
         }
     });
-
-    // //Foxpost plugin
-    // function receiveMessage(event) {
-    //     // if (event.origin !== 'https://cdn.foxpost.hu') {return};
-    //     var apt = JSON.parse(event.data);
-    //     $('#foxpost').val(apt.name, apt.findme);
-    //     if ($("#foxpost").val() != "") {
-    //         var element = document.getElementById("foxpost");
-    //         element.scrollIntoView();
-    //     }
-    // }
-    // window.addEventListener('message', receiveMessage, false);
 
     //Foxpost list
     let dropdown = $('#foxpost_machine');
