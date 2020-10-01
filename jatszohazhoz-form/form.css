@@ -7,6 +7,10 @@
     column-count: 1;
 }
 
+.logo {
+    max-height: 3rem;
+}
+
 @media (min-width: 576px) {
     .card-columns {
         column-count: 2;
@@ -16,6 +20,9 @@
 @media (min-width: 768px) {
     .card-columns {
         column-count: 3;
+    }
+    .logo {
+        max-height: 6rem;
     }
 }
 
@@ -51,10 +58,6 @@ fieldset {
 
 small {
     max-width: 800px;
-}
-
-.logo {
-    max-height: 3rem;
 }
 
 .btn-light {
