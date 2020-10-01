@@ -11,6 +11,14 @@
     max-height: 3rem;
 }
 
+small {
+    font-size: 0.8rem;
+}
+
+.h2 {
+    font-size: 1.3rem;
+}
+
 @media (min-width: 576px) {
     .card-columns {
         column-count: 2;
@@ -23,6 +31,12 @@
     }
     .logo {
         max-height: 6rem;
+    }
+    small {
+        font-size: 1rem;
+    }
+    .h2 {
+        font-size: 2rem;
     }
 }
 

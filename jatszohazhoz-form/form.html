@@ -62,17 +62,12 @@
                 </div>
             </div>
 
-            <div class="container text-center mt-3">
+            <div class="container text-center my-3">
                 <span class="h2">Melyik játékokat próbálnád ki szívesen?</span>
             </div>
             <div class="list-container container" id="wishlist">
 
-                <div class="container p-3 text-center w-75">
-                    <ul class="list-group game-list"></ul>
-                </div>
-                <input class="form-control mx-auto search-box w-75 mb-3" type="text" placeholder="Keresés.."
-                    aria-describedby="searchHelpText">
-                <small class="text-muted" id="searchHelpText">
+                <small class="text-muted">
                     <strong>Nem ismersz egyet sem?</strong> Semmi gond. Nyugodtan hagyd ki ezt a
                     lépést és mi gondoskodunk róla, hogy olyan játékokat
                     kapj, amik tetszeni fognak.<br>
@@ -81,6 +76,10 @@
                     sorrendben! Igyekszünk minden kérésnek eleget tenni, de nem tudjuk
                     garantálni, hogy az itt kiválasztott játékokat fogod kapni.
                 </small>
+                <div class="container p-3 text-center w-75">
+                    <ul class="list-group game-list"></ul>
+                </div>
+                <input class="form-control mx-auto search-box w-75 mb-3" type="text" placeholder="Keresés..">
                 <div class="container card-container mt-3">
 
                     <div class="card-columns">
@@ -113,18 +112,17 @@
                 </div>
             </div>
 
-            <div class="container text-center mt-3">
+            <div class="container text-center my-3">
                 <span class="h2">Melyik játékokat NEM szeretnéd kapni a csomagodban?</span>
             </div>
             <div class="container list-container" id="unwanted">
+                <small class="form-text text-muted mb-2">Például mert megvan otthon, vagy esetleg
+                    már próbáltad és nem
+                    annyira tetszett.</small>
                 <div class="container text-center p-3 w-75">
                     <ul class="list-group game-list"></ul>
                 </div>
-                <input class="form-control mb-3 search-box" type="text" placeholder="Keresés.."
-                    aria-describedby="unwantedHelpText">
-                <small class="form-text text-muted mb-2" id="unwantedHelpText">Például mert megvan otthon, vagy esetleg
-                    már próbáltad és nem
-                    annyira tetszett.</small>
+                <input class="form-control mb-3 search-box" type="text" placeholder="Keresés..">
 
                 <div class="container card-container">
 
@@ -168,7 +166,7 @@
                     Ezek a kérdések segítenek nekünk meghatározni, hogy milyen típusú játékok fognak tetszeni neked.
                     Nyugodtan kihagyhatod bármelyik kérdést, ha nem tudsz, vagy nem szeretnél válaszolni rá.
                 </small>
-                <p class="h3">Játékosszám</p>
+                <p class="h2">Játékosszám</p>
                 <small class="form-text text-muted mb-2">Általában hányan fogtok játszani? Többet is
                     megjelölhetsz.</small>
                 <div class="custom-control custom-checkbox custom-control-inline">
@@ -193,7 +191,7 @@
                 </div>
             </div>
             <div class="form-group container">
-                <p class="h3 pt-4">Komplexitás</p>
+                <p class="h2 pt-4">Komplexitás</p>
                 <small class="form-text text-muted mb-2">Jelöld meg az alábbi skálán, hogy elsősorban milyen
                     komplexitású játékokat szeretnél kapni. Többet is megjelölhetsz.</small>
                 <div class="custom-control custom-checkbox">
@@ -215,7 +213,7 @@
             </div>
 
             <div class="form-group container">
-                <p class="h3 pt-4">Játékidő</p>
+                <p class="h2 pt-4">Játékidő</p>
                 <small class="form-text text-muted mb-2">Jelöld meg az alábbi skálán, hogy elsősorban milyen hosszú
                     játékokat szeretnél kapni. Többet is megjelölhetsz.</small>
                 <div class="custom-control custom-checkbox">
@@ -237,7 +235,7 @@
             </div>
 
             <div class="form-group container">
-                <p class="h3 pt-4">Sorolj fel néhányat a kedvenc játékaid közül!</p>
+                <p class="h2 pt-4">Sorolj fel néhányat a kedvenc játékaid közül!</p>
                 <small class="form-text text-muted mb-2">Figyelem, az itt szereplő konkrét játékok is előfordulhatnak
                     majd a
                     dobozodban. Ha ezt nem szeretnéd, az előző oldalon is tüntesd fel őket.</small>
@@ -245,7 +243,7 @@
             </div>
 
             <div class="form-group container">
-                <p class="h3 pt-4">Szeretnél kooperatív játékokat?</p>
+                <p class="h2 pt-4">Szeretnél kooperatív játékokat?</p>
                 <select class="select2" style="width: 100%" id="coop">
                     <option value="1">Igen</option>
                     <option value="0">Nem</option>
@@ -254,7 +252,7 @@
             </div>
 
             <div class="form-group container">
-                <p class="h3 pt-4">Csak olyan játékokat szeretnél, amik ketten is jók?</p>
+                <p class="h2 pt-4">Csak olyan játékokat szeretnél, amik ketten is jók?</p>
                 <select class="select2" style="width: 100%" id="twoplayer">
                     <option value="1">Igen</option>
                     <option selected value="0">Nem</option>
@@ -262,7 +260,7 @@
             </div>
 
             <div class="form-group container">
-                <p class="h3 pt-4">Nyelvfüggetlen játékok</p>
+                <p class="h2 pt-4">Nyelvfüggetlen játékok</p>
                 <select class="select2" style="width: 100%" id="language">
                     <option selected value="HU, EN">Jöhetnek angol nyelvű és nem teljesen nyelvfüggetlen játékok is.
                         (Például: angol szöveg a kártyákon.)</option>
@@ -271,7 +269,7 @@
             </div>
 
             <div class="form-group container">
-                <p class="h3 pt-4">Szeretnél gyerekjátékokat?</p>
+                <p class="h2 pt-4">Szeretnél gyerekjátékokat?</p>
                 <small class="form-text text-muted mb-2">5. osztálytól felfelé már inkább a könnyedebb felnőtt játékokat
                     ajánljuk.</small>
                 <select class="select2" style="width: 100%" id="children">
@@ -284,7 +282,7 @@
             </div>
 
             <div class="form-group container">
-                <p class="h3 pt-4">Bármilyen egyéb üzenet:</p>
+                <p class="h2 pt-4">Bármilyen egyéb üzenet:</p>
                 <textarea class="form-control" id="note"></textarea>
             </div>
 
@@ -336,7 +334,7 @@
             </div>
 
             <div class="form-group container">
-                <p class="h3 pt-4">Melyik csomagra szeretnél előfizetni?</p>
+                <p class="h2 pt-4">Melyik csomagra szeretnél előfizetni?</p>
                 <select class="select2" style="width: 100%" id="productid">
                     <option value="2">A - Kéthetente egy csomag, alkalmanként 3 játékkal, három hónapig (6 kiszállítás)
                         - 23.850,- Ft</option>
@@ -350,7 +348,7 @@
             </div>
 
             <div class="form-group container">
-                <label class="h3 pt-4" for="courier">Szállítási mód:</label>
+                <label class="h2 pt-4" for="courier">Szállítási mód:</label>
                 <select class="select2" style="width: 100%" id="courier">
                     <option selected value="Foxpost">Foxpost csomagautomata</option>
                     <option value="24h">Házhoz szállítás</option>
