@@ -3,8 +3,8 @@
 $(document).ready(function () {
     const createCards = $.getJSON("gamesDB.json", function (response) {
         response.forEach(function (element, index) {
-            $('.card-columns').append(`
-                <div class="card p-2">
+            $('.row.games').append(`
+                <div class="card p-2 col-sm-6 col-md-4 col-lg-3">
                 <a href="#/" class="selectbtn text-decoration-none text-reset">
                     <div class="text-center">
                         <h5 class="card-title">${element.name}</h5>
@@ -44,12 +44,11 @@ const x = function () {
             numOfSelectedGames++;
 
             //remove card from the opposing list
-            console.log(containerId);
             let opposingList = "";
             if (containerId == "wishlist") {
                 opposingList = "unwanted";
             } else if (containerId == "unwanted") {
-                opposingList = "wishlist";                
+                opposingList = "wishlist";
             }
             let cards = $(`#${opposingList} .card`);
             for (let i = 0; i < cards.length; i++) {
@@ -74,7 +73,7 @@ const x = function () {
                 if (containerId == "wishlist") {
                     opposingList = "unwanted";
                 } else if (containerId == "unwanted") {
-                    opposingList = "wishlist";                
+                    opposingList = "wishlist";
                 }
                 let removedCards = $(`#${opposingList} .d-none`);
                 for (let i = 0; i < removedCards.length; i++) {
