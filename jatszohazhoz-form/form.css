@@ -71,3 +71,18 @@ small {
     background-color: #a93033;
     color: white;
 }
+
+
+.material-icons.md-18 { font-size: 2rem; }
+.material-icons.md-24 { font-size: 2rem; }
+.material-icons.md-36 { font-size: 2rem; }
+.material-icons.md-48 { font-size: 2rem; }
+
+.active.checkbox-c {
+    border-color: #5cb85c !important;
+    background-color: #5cb85c !important;
+}
+
+radio.checked {
+    
+}
