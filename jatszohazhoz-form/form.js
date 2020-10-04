@@ -161,4 +161,35 @@ const x = function () {
     $('#children0').on("click", function () {
         $('.child-options').hide();
     });
+
+    //product selection show description
+    $('#productid-1').on("click", function () {
+        $('#product-desc').text("Kéthetente egy csomag, alkalmanként 3 játékkal, három hónapig (6 kiszállítás)");
+        $('#courier-delivery').removeClass('disabled');
+    });
+    $('#productid-2').on("click", function () {
+        $('#product-desc').text("Havonta egy csomag, alkalmanként 3 játékkal, három hónapig (3 kiszállítás)");
+        $('#courier-delivery').removeClass('disabled');
+    });
+    $('#productid-3').on("click", function () {
+        $('#product-desc').text("Kéthavonta egy csomag, alkalmanként 4 játékkal, hat hónapig (3 kiszállítás)");
+        $('#courier-delivery').removeClass('disabled');
+    });
+    $('#productid-4').on("click", function () {
+        $('#product-desc').text("");
+        $('#product-desc').append("<br>");
+        $('#courier-foxpost').trigger("click");
+        $('#courier-delivery').addClass('disabled');
+    });
+
+    //courier selection
+    $('#courier-foxpost').on("click", function () {
+        $('#courier').val("Foxpost");
+        $("#courier").trigger("change");
+    });
+    $('#courier-delivery').on("click", function () {
+        $('#courier').val("24h");
+        $("#courier").trigger("change");
+    });
+
 };

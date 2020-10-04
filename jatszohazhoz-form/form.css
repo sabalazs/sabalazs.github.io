@@ -91,6 +91,17 @@ small {
 
 }
 
-radio.checked {
+#productid-4-btn {
+    font-size: 0.7rem !important;
+}
 
+.btn-success {
+    border-color: #a93033 !important;
+    background-color: #a93033 !important;
+    color: #efefef !important;
+
+}
+
+.narrow {
+    max-width: 400px;
 }

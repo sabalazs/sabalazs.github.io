@@ -203,7 +203,7 @@
 
                 <div class="my-3 my-md-4 my-lg-5">
                     <span class="material-icons md-24 align-text-bottom">group</span><span class="h2">
-                         Játékosszám</span>
+                        Játékosszám</span>
                     <small class="form-text text-muted mb-2">Általában hányan fogtok játszani? Többet is
                         megjelölhetsz.</small>
                     <div class="btn-group-toggle" data-toggle="buttons">
@@ -229,8 +229,8 @@
             </div>
             <div class="form-group container">
                 <div class="my-3 my-md-4 my-lg-5">
-                    <span class="material-icons md-24 align-text-bottom">psychology</span><span
-                        class="h2"> Komplexitás</span>
+                    <span class="material-icons md-24 align-text-bottom">psychology</span><span class="h2">
+                        Komplexitás</span>
                     <small class="form-text text-muted mb-2">Elsősorban milyen
                         komplexitású játékokat szeretnél kapni? Többet is megjelölhetsz.</small>
 
@@ -266,8 +266,8 @@
             <div class="form-group container">
 
                 <div class="my-3 my-md-4 my-lg-5">
-                    <span class="material-icons md-24 align-text-bottom">watch_later</span><span
-                        class="h2 pt-4"> Játékidő</span>
+                    <span class="material-icons md-24 align-text-bottom">watch_later</span><span class="h2 pt-4">
+                        Játékidő</span>
                     <small class="form-text text-muted mb-2">Elsősorban milyen hosszú
                         játékokat szeretnél kapni? Többet is megjelölhetsz.</small>
 
@@ -364,24 +364,28 @@
                 </div>
                 <br>
                 <div class="btn-group btn-group-toggle mt-2 child-options" data-toggle="buttons">
-                    
-                <br>
+
+                    <br>
                     <label class="btn btn-secondary checkbox-c">
-                        <input type="radio" name="options" id="children-all" value="1" autocomplete="off">Csak gyerekjátékokat kérek
+                        <input type="radio" name="options" id="children-all" value="1" autocomplete="off">Csak
+                        gyerekjátékokat kérek
                     </label>
                     <label class="btn btn-secondary active checkbox-c">
-                        <input type="radio" name="options" id="children-one-each" value="0" autocomplete="off" checked>Minden dobozban egyet
+                        <input type="radio" name="options" id="children-one-each" value="0" autocomplete="off"
+                            checked>Minden dobozban egyet
                     </label>
                 </div>
 
-                
+
                 <div class="btn-group btn-group-toggle mt-2 child-options" data-toggle="buttons">
                     <br>
                     <label class="btn btn-secondary checkbox-c">
-                        <input type="radio" name="options" id="children-all" value="1" autocomplete="off">1-2. osztályos gyerekeknek
+                        <input type="radio" name="options" id="children-1-2" value="1" autocomplete="off">1-2. osztályos
+                        gyerekeknek
                     </label>
                     <label class="btn btn-secondary active checkbox-c">
-                        <input type="radio" name="options" id="children-one-each" value="0" autocomplete="off" checked>3-4. osztályos gyerekeknek
+                        <input type="radio" name="options" id="children-3-4" value="0" autocomplete="off" checked>3-4.
+                        osztályos gyerekeknek
                     </label>
                 </div>
 
@@ -392,7 +396,7 @@
                 <textarea class="form-control" id="note"></textarea>
             </div>
 
-            <div class="container mt-5">
+            <div class="container mt-5 mb-3">
                 <div class="row navbar">
                     <div class="col-4">
                         <div class="btn-back btn btn-light m-2 float-left d-flex align-items-center">
@@ -447,27 +451,57 @@
                 </div>
             </div>
 
-            <div class="container text-center my-3 my-md-4 my-lg-5">
-                <span class="h2">Szállítási és számlázási információk</span>
+            <div class="form-group container">
+
+                <div class="form-group container my-3 my-md-4 my-lg-5 text-center">
+                    <span class="h2 pt-4 mb-2">Melyik csomagra szeretnél előfizetni?</span> <br> <br>
+                    <div data-toggle="buttons" class="text-center">
+                        <div class="btn-group btn-group-toggle mt-2">
+                            <label class="btn btn-secondary checkbox-c">
+                                <input type="radio" name="options" id="productid-1" value="1" autocomplete="off"> A -
+                                23.850,- Ft
+                            </label>
+                            <label class="btn btn-secondary checkbox-c">
+                                <input type="radio" name="options" id="productid-2" value="2" autocomplete="off"> B -
+                                14.850,- Ft
+                            </label>
+                            <label class="btn btn-secondary active checkbox-c">
+                                <input type="radio" name="options" id="productid-3" value="3" autocomplete="off"
+                                    checked> C
+                                - 19.950,- Ft
+                            </label>
+                        </div>
+                        <small class="form-text text-muted mb-2" id="product-desc">Kéthavonta egy csomag, alkalmanként 4
+                            játékkal, hat hónapig (3
+                            kiszállítás)</small>
+                        <div class="btn-group btn-group-toggle mt-2">
+                            <label class="btn btn-secondary checkbox-c" id="productid-4-btn">
+                                <input type="radio" name="options" id="productid-4" value="4" autocomplete="off">Egy
+                                csomag, előfizetés nélkül - 4.490,- Ft
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group container">
-                <p class="h2 pt-4">Melyik csomagra szeretnél előfizetni?</p>
-                <select class="select2" style="width: 100%" id="productid">
-                    <option value="2">A - Kéthetente egy csomag, alkalmanként 3 játékkal, három hónapig (6
-                        kiszállítás)
-                        - 23.850,- Ft</option>
-                    <option selected value="1">B - Havonta egy csomag, alkalmanként 3 játékkal, három hónapig (3
-                        kiszállítás) - 14.850,- Ft</option>
-                    <option value="3">C - Kéthavonta egy csomag, alkalmanként 4 játékkal, hat hónapig (3
-                        kiszállítás) -
-                        19.950,- Ft</option>
-                    <option value="4">Egy csomag, három játékkal, két hétre, előfizetés nélkül - 4.490,- Ft (csak
-                        Foxposttal elérhető)</option>
-                </select>
+
+            <div class="form-group container my-3 my-md-4 my-lg-5 text-center">
+                <br>
+                <span class="h2 pt-4 mb-2">Szállítási mód:</span>
+                <br>
+                <div class="btn-group btn-group-toggle mt-2" is="courier-selection" data-toggle="buttons">
+                    <label class="btn btn-secondary active checkbox-c">
+                        <input type="radio" name="options" id="courier-foxpost" value="1" autocomplete="off" checked>Foxpost csomagautomata
+                    </label>
+                    <label class="btn btn-secondary checkbox-c">
+                        <input type="radio" name="options" id="courier-delivery" value="1" autocomplete="off">Házhoz szállítás
+                    </label>
+                </div>
             </div>
 
-            <div class="form-group container">
+            <div class="form-group container d-none">
+                
                 <label class="h2 pt-4" for="courier">Szállítási mód:</label>
                 <select class="select2" style="width: 100%" id="courier">
                     <option selected value="Foxpost">Foxpost csomagautomata</option>
@@ -475,14 +509,14 @@
                 </select>
             </div>
 
-            <div class="form-group container pt-3" id="foxpost-div">
+            <div class="form-group container my-3 my-md-4 my-lg-5 text-center narrow" id="foxpost-div">
                 <select class="select2" style="width: 100%" id="foxpost_machine">
                 </select>
                 <a href="https://foxpost.hu/csomagautomatak" target="_blank"><small>Térképes kereső a Foxpost
                         oldalán</small></a>
             </div>
 
-            <div class="form-group container pt-4">
+            <div class="form-group container my-3 my-md-4 my-lg-5 text-center narrow">
 
                 <label for="name">Név:</label>
                 <input type="text" class="form-control mb-3" placeholder="Név" id="name">
