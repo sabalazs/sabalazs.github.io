@@ -152,4 +152,13 @@ const x = function () {
             dropdown.append($('<option></option>').val(item.operator_id).text(`${item.name} - ${item.address}`));
         });
     });
+
+    //children games options selector
+    $('.child-options').hide();
+    $('#children1').on("click", function () {
+        $('.child-options').show();
+    });
+    $('#children0').on("click", function () {
+        $('.child-options').hide();
+    });
 };

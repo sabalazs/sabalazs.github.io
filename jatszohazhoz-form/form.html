@@ -34,7 +34,7 @@
 
 <body>
 
-    <form action="" class="">
+    <form action="" class="text-dark">
 
         <!-- FIRST PAGE -->
 
@@ -203,7 +203,7 @@
 
                 <div class="my-3 my-md-4 my-lg-5">
                     <span class="material-icons md-24 align-text-bottom">group</span><span class="h2">
-                        Játékosszám</span>
+                         Játékosszám</span>
                     <small class="form-text text-muted mb-2">Általában hányan fogtok játszani? Többet is
                         megjelölhetsz.</small>
                     <div class="btn-group-toggle" data-toggle="buttons">
@@ -230,7 +230,7 @@
             <div class="form-group container">
                 <div class="my-3 my-md-4 my-lg-5">
                     <span class="material-icons md-24 align-text-bottom">psychology</span><span
-                        class="h2">Komplexitás</span>
+                        class="h2"> Komplexitás</span>
                     <small class="form-text text-muted mb-2">Elsősorban milyen
                         komplexitású játékokat szeretnél kapni? Többet is megjelölhetsz.</small>
 
@@ -267,7 +267,7 @@
 
                 <div class="my-3 my-md-4 my-lg-5">
                     <span class="material-icons md-24 align-text-bottom">watch_later</span><span
-                        class="h2 pt-4">Játékidő</span>
+                        class="h2 pt-4"> Játékidő</span>
                     <small class="form-text text-muted mb-2">Elsősorban milyen hosszú
                         játékokat szeretnél kapni? Többet is megjelölhetsz.</small>
 
@@ -296,7 +296,7 @@
 
             <div class="form-group container my-3 my-md-4 my-lg-5">
                 <span class="material-icons md-24 align-text-bottom">favorite</span>
-                <span class="h2 pt-4">Kedvencek</span>
+                <span class="h2 pt-4"> Kedvencek</span>
                 <small class="form-text text-muted mb-2">Sorolj fel néhányat a kedvenc játékaid közül! Figyelem, az itt
                     szereplő konkrét játékok is
                     előfordulhatnak majd a dobozodban. Ha ezt nem szeretnéd, az előző oldalon is tüntesd fel
@@ -306,7 +306,7 @@
 
             <div class="form-group container my-3 my-md-4 my-lg-5">
                 <span class="material-icons md-24 align-text-bottom">group_work</span>
-                <span class="h2 pt-4 mb-2">Szeretnél kooperatív játékokat?</span> <br>
+                <span class="h2 pt-4 mb-2"> Szeretnél kooperatív játékokat?</span> <br>
 
                 <div class="btn-group btn-group-toggle mt-2" data-toggle="buttons">
                     <label class="btn btn-secondary checkbox-c">
@@ -322,8 +322,8 @@
             </div>
 
             <div class="form-group container my-3 my-md-4 my-lg-5">
-                <span class="material-icons md-24 align-text-bottom">group_work</span>
-                <span class="h2 pt-4 mb-2">Csak olyan játékokat szeretnél, amik ketten is jók?</span> <br>
+                <span class="material-icons md-24 align-text-bottom">looks_two</span>
+                <span class="h2 pt-4 mb-2"> Csak olyan játékokat szeretnél, amik ketten is jók?</span> <br>
 
                 <div class="btn-group btn-group-toggle mt-2" data-toggle="buttons">
                     <label class="btn btn-secondary checkbox-c">
@@ -337,24 +337,21 @@
 
             <div class="form-group container my-3 my-md-4 my-lg-5">
                 <span class="material-icons md-24 align-text-bottom">language</span>
-                <span class="h2 pt-4 mb-2">Nyelvfüggetlen játékok</span>
+                <span class="h2 pt-4 mb-2">Kizárólag magyar nyelvű vagy nyelvfüggetlen játékokat szeretnél?</span>
                 <br>
                 <div class="btn-group btn-group-toggle mt-2" data-toggle="buttons">
                     <label class="btn btn-secondary active checkbox-c">
-                        <input type="radio" name="options" id="language1" value="HU, EN" autocomplete="off"
-                            checked>Jöhetnek angol nyelvű és nem teljesen nyelvfüggetlen játékok is.
-                        (Például: angol szöveg a kártyákon.)
+                        <input type="radio" name="options" id="language0" value="HU" autocomplete="off">Igen
                     </label>
                     <label class="btn btn-secondary checkbox-c">
-                        <input type="radio" name="options" id="language0" value="HU" autocomplete="off">Csak magyar
-                        nyelvű, vagy nyelvfüggetlen játékokat szeretnék kapni.
+                        <input type="radio" name="options" id="language1" value="HU, EN" autocomplete="off" checked>Nem
                     </label>
                 </div>
             </div>
 
             <div class="form-group container my-3 my-md-4 my-lg-5">
-                <span class="material-icons md-24 align-text-bottom">language</span>
-                <span class="h2 pt-4 mb-2">Szeretnél gyerekjátékokat?</span>
+                <span class="material-icons md-24 align-text-bottom">child_care</span>
+                <span class="h2 pt-4 mb-2"> Szeretnél gyerekjátékokat?</span>
                 <small class="form-text text-muted mb-2">5. osztálytól felfelé már inkább a könnyedebb felnőtt játékokat
                     ajánljuk.</small>
                 <div class="btn-group btn-group-toggle mt-2" data-toggle="buttons">
@@ -365,22 +362,29 @@
                         <input type="radio" name="options" id="children0" value="0" autocomplete="off" checked>Nem
                     </label>
                 </div>
-            </div>
+                <br>
+                <div class="btn-group btn-group-toggle mt-2 child-options" data-toggle="buttons">
+                    
+                <br>
+                    <label class="btn btn-secondary checkbox-c">
+                        <input type="radio" name="options" id="children-all" value="1" autocomplete="off">Csak gyerekjátékokat kérek
+                    </label>
+                    <label class="btn btn-secondary active checkbox-c">
+                        <input type="radio" name="options" id="children-one-each" value="0" autocomplete="off" checked>Minden dobozban egyet
+                    </label>
+                </div>
 
+                
+                <div class="btn-group btn-group-toggle mt-2 child-options" data-toggle="buttons">
+                    <br>
+                    <label class="btn btn-secondary checkbox-c">
+                        <input type="radio" name="options" id="children-all" value="1" autocomplete="off">1-2. osztályos gyerekeknek
+                    </label>
+                    <label class="btn btn-secondary active checkbox-c">
+                        <input type="radio" name="options" id="children-one-each" value="0" autocomplete="off" checked>3-4. osztályos gyerekeknek
+                    </label>
+                </div>
 
-            <div class="form-group container">
-                <p class="h2 pt-4">Szeretnél gyerekjátékokat?</p>
-                <small class="form-text text-muted mb-2">5. osztálytól felfelé már inkább a könnyedebb felnőtt játékokat
-                    ajánljuk.</small>
-                <select class="select2" style="width: 100%" id="children">
-                    <option selected value="0">Nem</option>
-                    <option value="1">Igen, minden csomagban egyet. (1-2. osztályos gyerekeknek)</option>
-                    <option value="2">Igen, minden csomagban egyet. (3-4. osztályos gyerekeknek)</option>
-                    <option value="3">Igen, csak gyerekjátékokat szeretnék kapni. (1-2. osztályos gyerekeknek)
-                    </option>
-                    <option value="4">Igen, csak gyerekjátékokat szeretnék kapni. (3-4. osztályos gyerekeknek)
-                    </option>
-                </select>
             </div>
 
             <div class="form-group container">

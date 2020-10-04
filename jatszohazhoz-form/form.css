@@ -78,11 +78,19 @@ small {
 .material-icons.md-36 { font-size: 2rem; }
 .material-icons.md-48 { font-size: 2rem; }
 
+.checkbox-c {
+    color: black !important;
+    background-color: #efefef !important;
+    border-color: #efefef !important;
+}
+
 .active.checkbox-c {
-    border-color: #5cb85c !important;
-    background-color: #5cb85c !important;
+    border-color: #a93033 !important;
+    background-color: #a93033 !important;
+    color: #efefef !important;
+
 }
 
 radio.checked {
-    
+
 }
