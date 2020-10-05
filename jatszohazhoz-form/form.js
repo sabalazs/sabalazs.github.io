@@ -60,7 +60,6 @@ const x = function () {
             //add unselect function
             $(`#${containerId} ul`).children().last().click(function () {
                 game = $(this).find("span").text();
-                console.log(game);
                 for (let i = 0; i < $(`#${containerId} .selected`).length; i++) {
                     if ($($(`#${containerId} .selected`)[i]).find(".card-title").text() == game) {
                         $($(`#${containerId} .selected`)[i]).addClass("card");
