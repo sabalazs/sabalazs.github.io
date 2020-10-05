@@ -141,9 +141,13 @@ const x = function () {
 
     //Foxpost list
     let dropdown = $('#foxpost_machine');
-    dropdown.empty();
-    dropdown.append('<option selected="true" disabled>Válassz automatát</option>');
-    dropdown.prop('selectedIndex', 0);
+    $("#foxpost_machine").select2({
+        placeholder: "Válassz automatát",
+        allowClear: true
+    });
+    //dropdown.empty();
+    //dropdown.append('<option selected="true" disabled>Válassz automatát</option>');
+    //dropdown.prop('selectedIndex', 0);
 
     const foxpost_url = 'https://cdn.foxpost.hu/foxpost_terminals_extended_v3.json';
 
@@ -165,17 +169,17 @@ const x = function () {
     //product selection show description
     $('#productid-1').on("click", function () {
         $('#product-desc').text("Kéthetente egy doboz, alkalmanként 3 játékkal, három hónapon keresztül (6 kiszállítás)");
-        $('#courier-delivery').removeClass('disabled');
+        $('#courier-delivery').parent().removeClass('disabled');
         $('#product-desc-2').hide();
     });
     $('#productid-2').on("click", function () {
         $('#product-desc').text("Havonta egy doboz, alkalmanként 3 játékkal, három hónapon keresztül (3 kiszállítás)");
-        $('#courier-delivery').removeClass('disabled');
+        $('#courier-delivery').parent().removeClass('disabled');
         $('#product-desc-2').hide();
     });
     $('#productid-3').on("click", function () {
         $('#product-desc').text("Kéthavonta egy doboz, alkalmanként 4 játékkal, hat hónapon keresztül (3 kiszállítás)");
-        $('#courier-delivery').removeClass('disabled');
+        $('#courier-delivery').parent().removeClass('disabled');
         $('#product-desc-2').hide();
     });
     $('#productid-4').on("click", function () {
@@ -183,7 +187,7 @@ const x = function () {
         $('#product-desc').text("");
         $('#product-desc').append("<br>");
         $('#courier-foxpost').trigger("click");
-        $('#courier-delivery').addClass('disabled');
+        $('#courier-delivery').parent().addClass('disabled');
         $('#product-desc-2').text("Egy doboz, 3 játékkal, két hétre Foxpost csomagutomás kézbesítéssel.");
         $('#product-desc-2').append("<br>");
     });

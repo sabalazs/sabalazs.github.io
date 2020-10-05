@@ -62,7 +62,7 @@
                     </div>
                     <div class="col-6">
                         <div class="progress" style="height: 0.1rem">
-                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75%" aria-valuemin="0"
+                            <div class="progress-bar w-25" role="progressbar" aria-valuenow="25%" aria-valuemin="0"
                                 aria-valuemax="100"></div>
                         </div>
                     </div>
@@ -317,7 +317,7 @@
                     </div>
                     <div class="col-6">
                         <div class="progress" style="height: 0.1rem">
-                            <div class="progress-bar w-25" role="progressbar" aria-valuenow="25%" aria-valuemin="0"
+                            <div class="progress-bar w-50" role="progressbar" aria-valuenow="50%" aria-valuemin="0"
                                 aria-valuemax="100"></div>
                         </div>
                     </div>
@@ -381,7 +381,7 @@
                     </div>
                     <div class="col-6">
                         <div class="progress" style="height: 0.1rem">
-                            <div class="progress-bar w-50" role="progressbar" aria-valuenow="50%" aria-valuemin="0"
+                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75%" aria-valuemin="0"
                                 aria-valuemax="100"></div>
                         </div>
                     </div>
@@ -501,17 +501,9 @@
                 </div>
             </div>
 
-            <div class="form-group container d-none">
-
-                <label class="h2 pt-4" for="courier">Szállítási mód:</label>
-                <select class="select2" style="width: 100%" id="courier">
-                    <option selected value="Foxpost">Foxpost csomagautomata</option>
-                    <option value="24h">Házhoz szállítás</option>
-                </select>
-            </div>
-
             <div class="form-group container my-3 my-md-4 my-lg-5 text-center narrow" id="foxpost-div">
-                <select class="select2" style="width: 100%" id="foxpost_machine">
+                <select class="select2" style="width: 100%" id="foxpost_machine" required>
+                    <option></option>
                 </select>
                 <a href="https://foxpost.hu/csomagautomatak" target="_blank"><small>Térképes kereső a Foxpost
                         oldalán</small></a>
@@ -520,28 +512,47 @@
             <div class="form-group container my-3 my-md-4 my-lg-5 text-center narrow">
 
                 <label for="name">Név:</label>
-                <input type="text" class="form-control mb-3" placeholder="Név" id="name">
+                <input type="text" class="form-control mb-3" placeholder="Név" id="name" required>
 
                 <label for="email">Email cím:</label>
-                <input type="email" class="form-control mb-3" placeholder="Email" id="email">
+                <input type="email" class="form-control mb-3" placeholder="Email" id="email" required>
 
                 <label for="phone">Telefonszám:</label>
-                <input type="text" class="form-control mb-3" placeholder="+36xxxxxxxxx" id="phone">
+                <input type="text" class="form-control mb-3" placeholder="+36xxxxxxxxx" id="phone" required>
 
                 <label for="postcode">Irányítószám:</label>
-                <input type="text" class="form-control mb-3" placeholder="Irányítószám" id="postcode">
+                <input type="text" class="form-control mb-3" placeholder="Irányítószám" id="postcode" required>
 
                 <label for="city">Település:</label>
-                <input type="text" class="form-control mb-3" placeholder="Település" id="city">
+                <input type="text" class="form-control mb-3" placeholder="Település" id="city" required>
 
                 <label for="addr1">Utca:</label>
-                <input type="text" class="form-control mb-3" placeholder="Utca" id="addr1">
+                <input type="text" class="form-control mb-3" placeholder="Utca" id="addr1" required>
 
                 <label for="addr2">Házszám, emelet, ajtó:</label>
-                <input type="text" class="form-control mb-3" placeholder="Házszám, emelet, ajtó:" id="addr2">
+                <input type="text" class="form-control mb-3" placeholder="Házszám, emelet, ajtó:" id="addr2" required>
                 <div class="foxpost-hide">
                     <label for="addrnote">Egyéb információ a futárnak</label>
                     <input type="text" class="form-control" placeholder="Megjegyzés" id="addrnote">
+                </div>
+            </div>
+            <div class="container">
+                <div class="form-check narrow mx-auto mb-3 mt-3">
+                    <input type="checkbox" class="form-check-input" id="terms" required>
+                    <label class="form-check-label" for="terms"><a
+                            href="https://www.jatszohazprojekt.hu/jatszohazhoz-aszf" target="_blank">Elfogadom az itt
+                            elérhető ÁSZF-et és Adatkezelési tájékoztatót</a></label>
+                </div>
+                <div class="form-check narrow mx-auto">
+                    <input type="checkbox" class="form-check-input" id="webshop">
+                    <label class="form-check-label" for="webshop">Szeretnék regisztrálni a <a
+                            href="https://www.jatszohazprojekt.shop.hu/" target="_blank">Játszóház Projekt
+                            webshopba</a></label>
+                </div>
+                <div class="form-check narrow mx-auto mb-3">
+                    <input type="checkbox" class="form-check-input" id="newsletter">
+                    <label class="form-check-label" for="newsletter">Szeretnék feliratkozni a Játszóház Projekt
+                        hírlevélre</label>
                 </div>
             </div>
 
