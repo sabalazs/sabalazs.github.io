@@ -4,7 +4,7 @@ $(document).ready(function () {
     const createCards = $.getJSON("gamesDB.json", function (response) {
         response.forEach(function (element, index) {
             $('.row.games').append(`
-                <div class="card p-2 col-sm-6 col-md-4 col-lg-3">
+                <div class="card p-2 col-sm-6 col-md-4 col-lg-3" game-code="${element.code}">
                 <a href="#/" class="selectbtn text-decoration-none text-reset">
                     <div class="text-center">
                         <h5 class="card-title">${element.name}</h5>
@@ -35,7 +35,8 @@ const x = function () {
 
             let card = $(this).parent();
             let game = $(this).find(".text-center .card-title").text();
-            $(`#${containerId} .game-list`).append("<li class='list-group-item'><i class='material-icons align-middle float-right'>clear</i><span>" + game + "</span></li>");
+            let gameCode = card.attr("game-code");
+            $(`#${containerId} .game-list`).append("<li class='list-group-item' game-code='" + gameCode + "'><i class='material-icons align-middle float-right'>clear</i><span>" + game + "</span></li>");
 
             //remove card from the list
             card.addClass("selected");
@@ -201,5 +202,11 @@ const x = function () {
         $('#courier').val("24h");
         $("#courier").trigger("change");
     });
+
+    //submit
+    $( "form" ).submit(function( event ) {
+        console.log($(this).serializeArray());
+        return false;
+      });
 
 };
