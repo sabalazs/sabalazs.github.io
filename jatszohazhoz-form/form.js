@@ -35,7 +35,7 @@ const x = function () {
 
             let card = $(this).parent();
             let game = $(this).find(".text-center .card-title").text();
-            $(`#${containerId} .game-list`).append("<li class='list-group-item'>" + game + "</li>");
+            $(`#${containerId} .game-list`).append("<li class='list-group-item'><i class='material-icons align-middle float-right'>clear</i><span>" + game + "</span></li>");
 
             //remove card from the list
             card.addClass("selected");
@@ -58,8 +58,9 @@ const x = function () {
             }
 
             //add unselect function
-            $(`#${containerId} .game-list :last-child`).click(function () {
-                game = $(this).text();
+            $(`#${containerId} ul`).children().last().click(function () {
+                game = $(this).find("span").text();
+                console.log(game);
                 for (let i = 0; i < $(`#${containerId} .selected`).length; i++) {
                     if ($($(`#${containerId} .selected`)[i]).find(".card-title").text() == game) {
                         $($(`#${containerId} .selected`)[i]).addClass("card");
