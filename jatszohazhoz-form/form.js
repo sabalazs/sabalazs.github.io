@@ -203,10 +203,15 @@ const x = function () {
         $("#courier").trigger("change");
     });
 
-    //submit
-    $( "form" ).submit(function( event ) {
-        console.log($(this).serializeArray());
-        return false;
-      });
+    // //submit
+    // $( "form" ).submit(function( event ) {
+    //     let response = $(this).serializeArray();
+    //     console.log(response);
+    //   });
+
+    // function beforeSubmit() {
+    //     console.log($('#unwanted'));
+    //     return false;
+    // }
 
 };
