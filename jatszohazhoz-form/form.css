@@ -105,3 +105,7 @@ small {
 .narrow {
     max-width: 400px;
 }
+
+.narrow2 {
+    max-width: 600px;
+}

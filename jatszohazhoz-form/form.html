@@ -37,133 +37,12 @@
     <form action="" class="text-dark">
 
         <!-- FIRST PAGE -->
-
-        <div class="form-page">
-            <div class="container">
-                <div class="row navbar">
-                    <div class="col-4">
-                        <div class="btn-back btn btn-light m-2 float-left d-none align-items-center">
-                            <i class="material-icons">chevron_left</i>
-                            <span class="d-none d-md-block">Vissza</span>
-                        </div>
-                    </div>
-                    <div class="col-4 text-center">
-                        <img class="logo" src="/jatszohazhoz-form/images/jatszohazprojekt_logo_piros.png"
-                            alt="Játszóház Projekt logo">
-                    </div>
-                    <div class="col-4">
-                        <div class="btn-next btn btn-light m-2 float-right d-flex align-items-center">
-                            <span class="d-none d-md-block">Tovább</span>
-                            <i class="material-icons">chevron_right</i></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                    </div>
-                    <div class="col-6">
-                        <div class="progress" style="height: 0.1rem">
-                            <div class="progress-bar w-25" role="progressbar" aria-valuenow="25%" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                    </div>
-                </div>
-            </div>
-
-            <div class="container text-center my-3 my-md-4 my-lg-5">
-                <span class="h2">Melyik játékokat próbálnád ki szívesen?</span>
-            </div>
-            <div class="list-container container" id="wishlist">
-
-                <small class="text-muted">
-                    <strong>Nem ismersz egyet sem?</strong> Semmi gond. Nyugodtan hagyd ki ezt a
-                    lépést és mi gondoskodunk róla, hogy olyan játékokat
-                    kapj, amik tetszeni fognak.<br>
-                    <strong>Pontosan tudod, hogy mit szeretnél?</strong> Válaszd ki a vágyott játékokat
-                    fontossági
-                    sorrendben! Igyekszünk minden kérésnek eleget tenni, de nem tudjuk
-                    garantálni, hogy az itt kiválasztott játékokat fogod kapni.
-                </small>
-                <div class="container p-3 text-center w-75">
-                    <ul class="list-group game-list"></ul>
-                </div>
-                <input class="form-control mx-auto search-box w-75 mb-3" type="text" placeholder="Keresés..">
-                <div class="container card-container mt-3">
-
-                    <div class="row games">
-                        <!-- CARDS APPENDED HERE BY SCRIPT -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SECOND PAGE -->
-
-        <div class="form-page">
-            <div class="container">
-                <div class="row navbar">
-                    <div class="col-4">
-                        <div class="btn-back btn btn-light m-2 float-left d-flex align-items-center">
-                            <i class="material-icons">chevron_left</i>
-                            <span class="d-none d-md-block">Vissza</span>
-                        </div>
-                    </div>
-                    <div class="col-4 text-center">
-                        <img class="logo" src="/jatszohazhoz-form/images/jatszohazprojekt_logo_piros.png"
-                            alt="Játszóház Projekt logo">
-                    </div>
-                    <div class="col-4">
-                        <div class="btn-next btn btn-light m-2 float-right d-flex align-items-center">
-                            <span class="d-none d-md-block">Tovább</span>
-                            <i class="material-icons">chevron_right</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                    </div>
-                    <div class="col-6">
-                        <div class="progress" style="height: 0.1rem">
-                            <div class="progress-bar w-50" role="progressbar" aria-valuenow="50%" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                    </div>
-                </div>
-            </div>
-
-            <div class="container text-center my-3 my-md-4 my-lg-5">
-                <span class="h2">Melyik játékokat NEM szeretnéd kapni a csomagodban?</span>
-            </div>
-            <div class="container list-container" id="unwanted">
-                <small class="form-text text-muted mb-2">Például mert megvan otthon, vagy esetleg
-                    már próbáltad és nem
-                    annyira tetszett.</small>
-                <div class="container text-center p-3 w-75">
-                    <ul class="list-group game-list"></ul>
-                </div>
-                <input class="form-control mb-3 search-box" type="text" placeholder="Keresés..">
-
-                <div class="container card-container">
-
-                    <div class="row games">
-                        <!-- CARDS APPENDED HERE BY JS -->
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- THIRD PAGE -->
-
         <div class="form-page pb-0">
 
             <div class="container">
                 <div class="row navbar">
                     <div class="col-4">
-                        <div class="btn-back btn btn-light m-2 float-left d-flex align-items-center">
+                        <div class="btn-back btn btn-light m-2 float-left align-items-center d-none">
                             <i class="material-icons">chevron_left</i>
                             <span class="d-none d-md-block">Vissza</span>
                         </div>
@@ -194,7 +73,7 @@
 
             <div class="form-group container">
                 <div class="container text-center my-3 my-md-4 my-lg-5">
-                    <span class="h2">Preferenciák</span>
+                    <span class="h2">Játszó/Házhoz megrendelő</span>
                 </div>
                 <small class="form-text text-muted mb-2">
                     Ezek a kérdések segítenek nekünk meghatározni, hogy milyen típusú játékok fognak tetszeni neked.
@@ -297,10 +176,7 @@
             <div class="form-group container my-3 my-md-4 my-lg-5">
                 <span class="material-icons md-24 align-text-bottom">favorite</span>
                 <span class="h2 pt-4"> Kedvencek</span>
-                <small class="form-text text-muted mb-2">Sorolj fel néhányat a kedvenc játékaid közül! Figyelem, az itt
-                    szereplő konkrét játékok is
-                    előfordulhatnak majd a dobozodban. Ha ezt nem szeretnéd, az előző oldalon is tüntesd fel
-                    őket.</small>
+                <small class="form-text text-muted mb-2">Sorolj fel néhányat a kedvenc játékaid közül!</small>
                 <textarea class="form-control" id="favourites"></textarea>
             </div>
 
@@ -416,8 +292,129 @@
 
         </div>
 
-        <!-- 4th PAGE -->
+        <!-- SECOND PAGE -->
+        <div class="form-page">
+            <div class="container">
+                <div class="row navbar">
+                    <div class="col-4">
+                        <div class="btn-back btn btn-light m-2 d-flex float-left align-items-center">
+                            <i class="material-icons">chevron_left</i>
+                            <span class="d-none d-md-block">Vissza</span>
+                        </div>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img class="logo" src="/jatszohazhoz-form/images/jatszohazprojekt_logo_piros.png"
+                            alt="Játszóház Projekt logo">
+                    </div>
+                    <div class="col-4">
+                        <div class="btn-next btn btn-light m-2 float-right d-flex align-items-center">
+                            <span class="d-none d-md-block">Tovább</span>
+                            <i class="material-icons">chevron_right</i></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                    </div>
+                    <div class="col-6">
+                        <div class="progress" style="height: 0.1rem">
+                            <div class="progress-bar w-25" role="progressbar" aria-valuenow="25%" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                    </div>
+                </div>
+            </div>
 
+            <div class="container text-center my-3 my-md-4 my-lg-5">
+                <span class="h2">Melyik játékokat próbálnád ki szívesen?</span>
+            </div>
+            <div class="list-container container" id="wishlist">
+                <div class="text-center narrow2 m-auto">
+                    <small class="text-muted">
+                        <strong>Nem ismersz egyet sem?</strong> Semmi gond. Nyugodtan hagyd ki ezt a
+                        lépést és mi gondoskodunk róla, hogy olyan játékokat
+                        kapj, amik tetszeni fognak.<br><br>
+                        <strong>Pontosan tudod, hogy mit szeretnél?</strong> Válaszd ki a vágyott játékokat
+                        fontossági
+                        sorrendben! Igyekszünk minden kérésnek eleget tenni, de nem tudjuk
+                        garantálni, hogy az itt kiválasztott játékokat fogod kapni.
+                    </small>
+                </div>
+                <div class="container p-3 text-center w-75 narrow2">
+                    <ul class="list-group game-list"></ul>
+                </div>
+                <input class="form-control mx-auto search-box w-75 mb-3 narrow2" type="text" placeholder="Keresés..">
+                <div class="container card-container mt-3">
+
+                    <div class="row games">
+                        <!-- CARDS APPENDED HERE BY SCRIPT -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- THIRD PAGE -->
+        <div class="form-page">
+            <div class="container">
+                <div class="row navbar">
+                    <div class="col-4">
+                        <div class="btn-back btn btn-light m-2 float-left d-flex align-items-center">
+                            <i class="material-icons">chevron_left</i>
+                            <span class="d-none d-md-block">Vissza</span>
+                        </div>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img class="logo" src="/jatszohazhoz-form/images/jatszohazprojekt_logo_piros.png"
+                            alt="Játszóház Projekt logo">
+                    </div>
+                    <div class="col-4">
+                        <div class="btn-next btn btn-light m-2 float-right d-flex align-items-center">
+                            <span class="d-none d-md-block">Tovább</span>
+                            <i class="material-icons">chevron_right</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                    </div>
+                    <div class="col-6">
+                        <div class="progress" style="height: 0.1rem">
+                            <div class="progress-bar w-50" role="progressbar" aria-valuenow="50%" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-center my-3 my-md-4 my-lg-5 narrow2">
+                <span class="h2">Van olyan játék, amit NEM szeretnéd kapni a csomagodban?</span>
+            </div>
+            <div class="container list-container" id="unwanted">
+                <div class="text-center">
+                    <small class="form-text text-muted mb-2 narrow2 mx-auto">Például mert megvan otthon, vagy esetleg
+                        már próbáltad és nem
+                        annyira tetszett.</small>
+                </div>
+                <div class="container text-center p-3 w-75 narrow2 mx-auto">
+                    <ul class="list-group game-list"></ul>
+                </div>
+                <input class="form-control mb-3 search-box narrow2 mx-auto" type="text" placeholder="Keresés..">
+
+                <div class="container card-container">
+
+                    <div class="row games">
+                        <!-- CARDS APPENDED HERE BY JS -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 4th PAGE -->
         <div class="form-page">
             <div class="container">
                 <div class="row navbar">
@@ -471,15 +468,17 @@
                                 - 19.950,- Ft
                             </label>
                         </div>
-                        <small class="form-text text-muted mb-2" id="product-desc">Kéthavonta egy csomag, alkalmanként 4
+                        <small class="form-text text-muted mb-2" id="product-desc">Kéthavonta egy doboz, alkalmanként 4
                             játékkal, hat hónapig (3
-                            kiszállítás)</small>
+                            kiszállítás)</small><br>
+                        <span class="h6 pt-4 mb-2">Vagy inkább előfizetés nélkül:</span> <br>
                         <div class="btn-group btn-group-toggle mt-2">
                             <label class="btn btn-secondary checkbox-c" id="productid-4-btn">
                                 <input type="radio" name="options" id="productid-4" value="4" autocomplete="off">Egy
-                                csomag, előfizetés nélkül - 4.490,- Ft
+                                doboz, előfizetés nélkül - 4.490,- Ft
                             </label>
                         </div>
+                        <small class="form-text text-muted mb-2" id="product-desc-2"></small>
 
                     </div>
                 </div>
@@ -492,16 +491,18 @@
                 <br>
                 <div class="btn-group btn-group-toggle mt-2" is="courier-selection" data-toggle="buttons">
                     <label class="btn btn-secondary active checkbox-c">
-                        <input type="radio" name="options" id="courier-foxpost" value="1" autocomplete="off" checked>Foxpost csomagautomata
+                        <input type="radio" name="options" id="courier-foxpost" value="1" autocomplete="off"
+                            checked>Foxpost csomagautomata
                     </label>
                     <label class="btn btn-secondary checkbox-c">
-                        <input type="radio" name="options" id="courier-delivery" value="1" autocomplete="off">Házhoz szállítás
+                        <input type="radio" name="options" id="courier-delivery" value="1" autocomplete="off">Házhoz
+                        szállítás
                     </label>
                 </div>
             </div>
 
             <div class="form-group container d-none">
-                
+
                 <label class="h2 pt-4" for="courier">Szállítási mód:</label>
                 <select class="select2" style="width: 100%" id="courier">
                     <option selected value="Foxpost">Foxpost csomagautomata</option>
