@@ -115,20 +115,17 @@ const x = function () {
     });
 
     //delivery page
-    $("#courier").change(function () {
+    $("input[name='courier']").change(function () {
         if ($(this).val() == "Foxpost") {
             $('#foxpost-div').show();
             $('#foxpost-div').attr('required', '');
-            $('#foxpost-div').attr('data-error', 'This field is required.');
             $('.foxpost-hide').hide();
         } else {
             $('#foxpost-div').hide();
             $('#foxpost-div').removeAttr('required');
-            $('#foxpost-div').removeAttr('data-error');
             $('.foxpost-hide').show();
         }
     });
-    $("#courier").trigger("change");
     $("#productid").change(function () {
         if ($(this).val() == 4) {
             $('#courier').val('Foxpost');
