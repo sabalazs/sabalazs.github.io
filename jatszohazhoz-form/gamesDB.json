@@ -503,5 +503,15 @@
     "code": "KORK",
     "name": "Korkép",
     "icon": "KORK.jpg"
+  },
+  {
+    "code": "CONC",
+    "name": "Concept",
+    "icon": "CONC.jpg"
+  },
+  {
+    "code": "BATT",
+    "name": "Battle Sheep",
+    "icon": "BATT.jpg"
   }
 ]
