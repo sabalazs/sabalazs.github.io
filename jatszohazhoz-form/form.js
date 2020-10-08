@@ -8,7 +8,7 @@ $(document).ready(function () {
                 <a href="#/" class="selectbtn text-decoration-none text-reset">
                     <div class="text-center">
                         <h5 class="card-title">${element.name}</h5>
-                        <img src="/jatszohazhoz-form/icons/${element.icon}" alt="" class="card-img-top">
+                        <img src="icons/${element.icon}" alt="" class="card-img-top">
                     </div>
                 </a>
                 </div>
@@ -213,12 +213,12 @@ function beforeSubmit() {
     $('#unwanted').find('li').each(function () {
         unwantedList = unwantedList + ", " + $(this).attr("game-code");
     });
-    $('#unwanted').append(`<textarea class="form-control d-none" id="unwanted-codes" name="unwanted-codes">${unwantedList}</textarea>`);
+    $('#unwanted').append(`<textarea class="form-control d-none" id="unwanted-codes" name="unwantedcodes">${unwantedList}</textarea>`);
 
     let wishList = "";    
     $('#wishlist').find('li').each(function () {
         wishList = wishList + ", " + $(this).attr("game-code");
     });
-    $('#wishlist').append(`<textarea class="form-control d-none" id="wishlist-codes" name="wishlist-codes">${wishList}</textarea>`);
+    $('#wishlist').append(`<textarea class="form-control d-none" id="wishlist-codes" name="wishlistcodes">${wishList}</textarea>`);
     return true;
 }
