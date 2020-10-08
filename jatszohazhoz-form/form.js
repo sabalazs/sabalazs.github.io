@@ -196,7 +196,7 @@ const x = function () {
         $("#courier").trigger("change");
     });
     $('#courier-delivery').on("click", function () {
-        $('#courier').val("24h");
+        $('#courier').val("24H");
         $("#courier").trigger("change");
     });
 
