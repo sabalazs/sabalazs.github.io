@@ -118,11 +118,11 @@ const x = function () {
     $("input[name='courier']").change(function () {
         if ($(this).val() == "Foxpost") {
             $('#foxpost-div').show();
-            $('#foxpost-div').attr('required', '');
+            $('#foxpost_machine').attr('required', '');
             $('.foxpost-hide').hide();
         } else {
             $('#foxpost-div').hide();
-            $('#foxpost-div').removeAttr('required');
+            $('#foxpost_machine').removeAttr('required');
             $('.foxpost-hide').show();
         }
     });
