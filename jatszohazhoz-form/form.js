@@ -186,7 +186,7 @@ const x = function () {
         $('#product-desc').append("<br>");
         $('#courier-foxpost').trigger("click");
         $('#courier-delivery').parent().addClass('disabled');
-        $('#product-desc-2').text("Egy doboz, 3 játékkal, két hétre Foxpost csomagutomás kézbesítéssel.");
+        $('#product-desc-2').text("Egy doboz, 3 játékkal, két hétre Foxpost csomagutomatás kézbesítéssel.");
         $('#product-desc-2').append("<br>");
     });
 
