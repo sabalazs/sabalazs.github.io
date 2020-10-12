@@ -115,6 +115,7 @@ const x = function () {
     });
 
     //delivery page
+    $('.foxpost-hide').hide();
     $("input[name='courier']").change(function () {
         if ($(this).val() == "Foxpost") {
             $('#foxpost-div').show();
