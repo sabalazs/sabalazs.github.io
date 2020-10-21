@@ -513,5 +513,35 @@
     "code": "BATT",
     "name": "Battle Sheep",
     "icon": "BATT.jpg"
+  },
+  {
+    "code": "HERB",
+    "name": "Herbaceous",
+    "icon": "HERB.jpg"
+  },
+  {
+    "code": "BRAS",
+    "name": "Brass: Birmingham",
+    "icon": "BRAS.jpg"
+  },
+  {
+    "code": "EVER",
+    "name": "Everdell",
+    "icon": "EVER.jpg"
+  },
+  {
+    "code": "MARI",
+    "name": "Mariposas",
+    "icon": "MARI.jpg"
+  },
+  {
+    "code": "KART",
+    "name": "Kartográfusok",
+    "icon": "KART.jpg"
+  },
+  {
+    "code": "ROBI",
+    "name": "Robinson Crusoe: Kalandok az elátkozott szigeten",
+    "icon": "ROBI.jpg"
   }
 ]
