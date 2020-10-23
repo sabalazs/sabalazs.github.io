@@ -1,0 +1,55 @@
+#title {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+h1, main, figure, h3 {
+    text-align: center;
+    margin: auto;
+}
+
+figure {
+    margin: 1rem;
+    background-color: white;
+    padding: 1rem;
+
+}
+
+figcaption {
+    padding: 1rem
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+h3 {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+h3, ul, blockquote {
+    max-width: 600px;
+    margin: auto;
+}
+
+h3 {
+    max-width: 100%;
+}
+
+li {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+blockquote {
+    text-align: left;
+}
