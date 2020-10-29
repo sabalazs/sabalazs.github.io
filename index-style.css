@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+html {
+    min-height: 100%;
+    background: linear-gradient(35deg, #7EE8FA, #EEC0C6);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    padding: 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    display: block;
+    border-radius: 1rem;
+    border: 3px solid whitesmoke;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+}
