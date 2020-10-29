@@ -5,7 +5,8 @@ h1 {
 
 html {
     min-height: 100%;
-    background: linear-gradient(35deg, #7EE8FA, #EEC0C6);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);  
     font-family: 'Roboto', sans-serif;
 }
 
@@ -20,7 +21,18 @@ html {
     display: block;
     border-radius: 1rem;
     border: 3px solid whitesmoke;
+    background-color: whitesmoke;
     padding: 1rem;
     text-align: center;
     margin: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item:hover {
+    background-color: white;
+}
+
+a {    
+    text-decoration: none;
+    color: inherit;
 }
