@@ -6,16 +6,21 @@ html {
 main {
     max-width: 1025px;
     margin: auto;
+    margin-top: 180px;
 }
 
 header {
     display: flex;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    position: fixed;
+    background-color: white;
+    width: 96%;
+    top: 0px;
 }
 
-#header-img {
+#logo {
     width: 6rem;
     height: 6rem;
     background-image: url("./jatszohazprojekt_logo_piros.png");
@@ -24,35 +29,32 @@ header {
 }
 
 .container {
-    width: 40%;
+    width: 30%;
 }
 
 #nav-bar {
-    width: 50%;
+    width: 60%;
 }
 
 ul {
     list-style: none;
     font-size: larger;
     text-transform: uppercase;
-    line-height: 1.5;
     padding: 0;
     text-align: end;
 }
-ul a {
+a{
     text-decoration: none;
-}
-
-li {
     white-space: nowrap;
     padding: 0 2%;
+    display: block;
 }
 
-li a:visited {
+a:visited {
     color: inherit;
 }
 
-li a:hover {
+a:hover {
     color: #a93033;
 }
 
@@ -79,7 +81,6 @@ h1 em {
 #video {
     padding-top: 1rem;
     margin: auto;
-    text-align: center;
 }
 
 @media (min-width: 769px) {
@@ -88,7 +89,7 @@ h1 em {
         justify-content: space-around;
 
     }
-    #header-img {
+    #logo {
         background-image: url("./logo-wide.png");
         width: 13rem;
         background-size: cover;
@@ -97,9 +98,18 @@ h1 em {
     .container {
         width: 50%;
     }
+    iframe {
+        width: 420px;
+        height: 315px; 
+    }
+    header {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
 }
 
-@media (min-width: 481px) {
+@media (min-width: 769px) {
     .services-container {
         margin: auto;
         display: flex;
@@ -119,7 +129,65 @@ h1 em {
 
 .service {
     background-color: #a93033;
-    color: ivory;
-    width: 100%;
+    color: white;
+    width: 90%;
+    margin: auto;
     margin: 1rem;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
 }
+
+.service-header {
+    color: #a93033;
+    border: 2px solid #a93033;
+    background-color: white;
+}
+
+.service-feature {
+    display: flex;
+    margin: 10%;
+    justify-items: center;
+}
+
+.material-icons {
+    align-self: center;
+}
+
+
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+#submit {
+    padding: 1rem;
+    color: white;
+    background-color: #a93033;
+    border-color: #a93033;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+
+form {
+    margin: auto;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.service:hover, #submit:hover {
+    box-shadow: 0 4px 8px 0 #a93033, 0 6px 20px 0 white;
+}
+
+#howitworks {
+    text-align: center;
+}
+
