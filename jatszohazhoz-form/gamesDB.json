@@ -46,7 +46,7 @@
   },
   {
     "code": "FUSZ",
-    "name": "Fűszerút",
+    "name": "Century I. - Fűszerút",
     "icon": "FUSZ.jpg"
   },
   {
@@ -236,7 +236,7 @@
   },
   {
     "code": "KELE",
-    "name": "Century - A kelet csodái",
+    "name": "Century II. - A kelet csodái",
     "icon": "KELE.jpg"
   },
   {
@@ -543,5 +543,10 @@
     "code": "ROBI",
     "name": "Robinson Crusoe",
     "icon": "ROBI.jpg"
+  },
+  {
+    "code": "UJVI",
+    "name": "Century III. - Egy új világ",
+    "icon": "UJVI.jpg"
   }
 ]
