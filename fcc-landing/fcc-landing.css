@@ -1,0 +1,125 @@
+html {
+    font-family: "Work Sans", sans-serif;
+    color: rgb(61, 59, 59);
+}
+
+main {
+    max-width: 1025px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#header-img {
+    width: 6rem;
+    height: 6rem;
+    background-image: url("./jatszohazprojekt_logo_piros.png");
+    background-size: cover;
+    margin: auto;
+}
+
+.container {
+    width: 40%;
+}
+
+#nav-bar {
+    width: 50%;
+}
+
+ul {
+    list-style: none;
+    font-size: larger;
+    text-transform: uppercase;
+    line-height: 1.5;
+    padding: 0;
+    text-align: end;
+}
+ul a {
+    text-decoration: none;
+}
+
+li {
+    white-space: nowrap;
+    padding: 0 2%;
+}
+
+li a:visited {
+    color: inherit;
+}
+
+li a:hover {
+    color: #a93033;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    padding: 1rem 10%;
+    text-align: center;
+    margin: auto;
+}
+
+p em {
+    font-style: normal;
+    font-weight: 600;
+    color: #a93033;
+}
+
+h1 em {
+    color: #a93033;
+}
+
+#video {
+    padding-top: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+@media (min-width: 769px) {
+    ul {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    #header-img {
+        background-image: url("./logo-wide.png");
+        width: 13rem;
+        background-size: cover;
+        margin: 0;
+    }
+    .container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 481px) {
+    .services-container {
+        margin: auto;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    .service {
+        width: 30%;
+    }
+}
+
+.services-container {
+    margin: auto;
+    align-content: center;
+}
+
+.service {
+    background-color: #a93033;
+    color: ivory;
+    width: 100%;
+    margin: 1rem;
+}
